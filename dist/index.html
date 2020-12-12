@@ -3,11 +3,368 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Universal - Main</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link href="vendors~main.2747f104a60b968be3f9.css" rel="stylesheet"><link href="main.33dc36f6bef0376d2dea.css" rel="stylesheet"></head>
+  <link href="vendors~main.2747f104a60b968be3f9.css" rel="stylesheet"><link href="main.a734984dc32e38ba15f9.css" rel="stylesheet"></head>
   <body>
-    <h1 class="wow fadeIn">Hello, world!</h1>
+    <header class="header">
+      <div class="container">
+        <div class="logo header__logo"></div>
+        <!-- /.logo header__logo -->
+        <nav class="navigation header__navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Статьи</a>
+            </li>
+            <!-- /.navigation__item -->
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Новости</a>
+            </li>
+            <!-- /.navigation__item -->
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Курсы</a>
+            </li>
+            <!-- /.navigation__item -->
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">HTML</a>
+            </li>
+            <!-- /.navigation__item -->
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">CSS</a>
+            </li>
+            <!-- /.navigation__item -->
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">JavaScript</a>
+            </li>
+            <!-- /.navigation__item -->
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Web Design</a>
+            </li>
+            <!-- /.navigation__item -->
+          </ul>
+          <!-- /.navigation__list -->
+        </nav>
+        <!-- /.navigation header__navigation -->
+        <form class="search-form header__search-form">
+          <input type="search" class="search-form__input" />
+        </form>
+        <!-- /.search-form header__search-form -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
+    <main class="main">
+      <div class="container">
+        <div class="main-information">
+          <div class="main-information__content">
+            <img
+              src="#"
+              alt="Main-information: Background"
+              class="main-bg main-information__bg"
+            />
+            <div class="main-information__info">
+              <div class="main-author main-information__author">
+                <img src="#" alt="Author: avatar" class="main-author__avatar" />
+                <div class="main-author__text-wrapper">
+                  <span class="main-author__name">Давид Гуров</span>
+                  <span class="main-author__profession">Разработчик</span>
+                </div>
+                <!-- /.main-author__text-wrapper -->
+              </div>
+              <!-- /.main-author main-information__author -->
+              <p class="main-information__description">JavaScript</p>
+              <h1 class="main-information__title">
+                Расширение Chrome защищает от атак
+              </h1>
+              <button class="button main-information__button button--default">
+                Читать далее
+              </button>
+            </div>
+            <!-- /.main-information__info -->
+          </div>
+          <!-- /.main-information__content -->
+          <aside class="sidebar main-information__sidebar sidebar--default">
+            <div class="sidebar__title-wrapper">
+              <h3 class="sidebar__title">Рекомендуем</h3>
+            </div>
+            <!-- /.sidebar__title-wrapper -->
+            <a href="#" class="main-information__sidebar-link">
+              <div class="main-information__sidebar-tile">
+                <h4 class="main-information__sidebar-title">Css</h4>
+                <p class="main-information__sidebar-description">
+                  Как использовать CSS float после того, как вышел Flexbox
+                </p>
+              </div>
+            </a>
+            <!-- /.main-information__sidebar-tile -->
+            <a href="#" class="main-information__sidebar-link">
+              <div class="main-information__sidebar-tile">
+                <h4 class="main-information__sidebar-title">JavaScript</h4>
+                <p class="main-information__sidebar-description">
+                  На каком стандарте писать скрипты, если я фрилансер
+                </p>
+              </div>
+            </a>
+            <!-- /.main-information__sidebar-tile -->
+            <a href="#" class="main-information__sidebar-link">
+              <div class="main-information__sidebar-tile">
+                <h4 class="main-information__sidebar-title">Html</h4>
+                <p class="main-information__sidebar-description">
+                  Правильно вставляем картинку на сайт для Retina дисплея
+                </p>
+              </div>
+            </a>
+            <!-- /.main-information__sidebar-tile -->
+            <a href="#" class="main-information__sidebar-link">
+              <div class="main-information__sidebar-tile">
+                <h4 class="main-information__sidebar-title">Web-design</h4>
+                <p class="main-information__sidebar-description">
+                  ТОП-10 плагинов для Figma
+                </p>
+              </div>
+            </a>
+            <!-- /.main-information__sidebar-tile -->
+            <a href="#" class="main-information__sidebar-link">
+              <div class="main-information__sidebar-tile">
+                <h4 class="main-information__sidebar-title">Css</h4>
+                <p class="main-information__sidebar-description">
+                  Возможности CSS Grid Layout, которые уже можно применять
+                </p>
+              </div>
+            </a>
+            <!-- /.main-information__sidebar-tile -->
+          </aside>
+          <!-- /.main-information__sidebar -->
+        </div>
+        <!-- /.main-information -->
+      </div>
+      <!-- /.container -->
+    </main>
+    <!-- /.main -->
+    <section class="chips">
+      <div class="container">
+        <div class="chips-wrapper">
+          <div class="chip chips-wrapper__chip">
+            <a href="#" class="chip__text">25 способов настроить слайдер</a>
+            <img src="#" alt="Chip: Image" class="chip__img" />
+          </div>
+          <!-- /.chip chips-wrapper__chip -->
+          <div class="chip chips-wrapper__chip">
+            <a href="#" class="chip__text">Главные фишки фрилансера</a>
+            <img src="#" alt="Chip: Image" class="chip__img" />
+          </div>
+          <!-- /.chip chips-wrapper__chip -->
+          <div class="chip chips-wrapper__chip">
+            <a href="#" class="chip__text"
+              >Техника управления временем "Помодоро
+            </a>
+            <img src="#" alt="Chip: Image" class="chip__img" />
+          </div>
+          <!-- /.chip chips-wrapper__chip -->
+          <div class="chip chips-wrapper__chip">
+            <a href="#" class="chip__text">Что нужно знать о Git и GitHub</a>
+            <img src="#" alt="Chip: Image" class="chip__img" />
+          </div>
+          <!-- /.chip chips-wrapper__chip -->
+        </div>
+        <!-- /.chips-wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.chips -->
+    <section class="posts">
+      <div class="posts-wrapper">
+        <div class="posts-wrapper__content">
+          <article class="article post-wrapper__article">
+            <img
+              src="#"
+              alt="Статья: Картинка с автомобилем"
+              class="article__car"
+            />
+            <div class="article__text-wrapper">
+              <span class="article__category">Статьи</span>
+              <h2 class="article__title">
+                Вам предложили работу мечты, но вы не можете...
+              </h2>
+              <p class="article__description">
+                Как поступить, если хочется пойти на работу мечты, но она
+                находится в другом городе. У вас семья и переезжать вы не
+                готовы.
+              </p>
+            </div>
+            <!-- /.article__text-wrapper -->
+            <div class="article__footer">
+              <div class="article-comment">
+                <div class="article-comment__author">
+                  <img
+                    src="#"
+                    alt="Comment: Author Avatar"
+                    class="article-comment__img"
+                  />
+                  <span class="article-comment__name">Инна Квашова</span>
+                </div>
+                <p class="article-comment__text">
+                  Каждый разработчик мечтает переехать в...
+                </p>
+              </div>
+              <!-- /.article-comment -->
+              <div class="counter counter--default article__counter">
+                <div class="counter__icon"></div>
+                <span class="counter__number">342</span>
+              </div>
+              <!-- /.counter article__counter -->
+            </div>
+            <!-- /.article__footer -->
+          </article>
+          <!-- /.article post-wrapper__article -->
+          <article class="real-project post-wrapper__real-project">
+            <img
+              src="#"
+              alt="Реальные проекты для портфолио: Фон"
+              class="real-project__bg"
+            />
+            <span class="mark real-project__mark">
+              Популярное
+            </span>
+            <span class="real-project__category">Web Design</span>
+            <h3 class="real-project__title">
+              Где взять реальные проекты для портфолио
+            </h3>
+            <div class="real-project__author">
+              <img
+                src="#"
+                alt="Реальные проекты для портфолио: Аватар автора поста"
+                class="real-project__author-avatar"
+              />
+              <div class="real-project__text-wrapper">
+                <span class="real-project__author-name">Сара Женникова</span>
+                <span class="real-project__date">25 сентября</span>
+                <div class="counter counter--default real-project__counter">
+                  <div class="counter__icon"></div>
+                  <span class="counter__number">16</span>
+                </div>
+                <!-- /.counter -->
+                <div class="counter counter--default real-project__counter">
+                  <div class="counter__icon"></div>
+                  <span class="counter__number">832</span>
+                </div>
+                <!-- /.counter -->
+              </div>
+              <!-- /.real-project__text-wrapper -->
+            </div>
+            <!-- /.real-project__author -->
+          </article>
+          <!-- /.real-project -->
+          <article class="instruments-post post-wrapper__instruments-post">
+            <img
+              src="#"
+              alt="Инструменты для JS разработчика: Картинка"
+              class="instruments-post__bg"
+            />
+            <p class="instruments-post__description">
+              20+ инструментов для js-разработчика
+            </p>
+          </article>
+          <!-- /.instruments-post -->
+          <article class="post post-wrapper__post">
+            <h3 class="post__title">Удачные референсы</h3>
+            <p class="post__description">
+              Как выбрать подходящие исходники, если вы ищете идею для
+              интерфейса
+            </p>
+            <span class="post__date">15 октября</span>
+          </article>
+          <!-- /.post post-wrapper__post -->
+          <article class="post post-wrapper__post">
+            <h3 class="post__title">Заказчики - мудаки?</h3>
+            <p class="post__description">
+              Как защититься от бесконечных правок на этапе сдачи проекта
+            </p>
+            <span class="post__date">20 октября</span>
+          </article>
+          <!-- /.post post-wrapper__post -->
+          <article class="post post-wrapper__post">
+            <h3 class="post__title">Работа без стресса - это...</h3>
+            <p class="post__description">
+              Обустройте свое рабочее место так, чтобы не испытывать раздражение
+              от скрипучего...
+            </p>
+            <span class="post__date">26 октября</span>
+          </article>
+          <!-- /.post post-wrapper__post -->
+          <article class="post post-wrapper__post">
+            <h3 class="post__title">Бесплатные методы...</h3>
+            <p class="post__description">
+              Как не платить за софт, если у вас есть студенческий билет высшего
+              учебного заведения
+            </p>
+            <span class="post__date">13 октября</span>
+          </article>
+          <!-- /.post post-wrapper__post -->
+          <aside class="sidebar sidebar--default checklist">
+            <div class="checklist__text-wrapper">
+              <h3 class="checklist__title">
+                Чек-лист сдачи вёрстки вашему заказчику
+              </h3>
+              <span class="checklist__file">PDF, 125 Мб</span>
+              <div class="sidebar__footer">
+                <a href="#" class="sidebar__footer-link">
+                  <div class="checklist__footer-icon"></div>
+                  Скачать
+                </a>
+              </div>
+              <!-- /.sidebar__footer -->
+            </div>
+            <!-- /.checklist__text-wrapper -->
+          </aside>
+          <!-- /.sidebar checklist -->
+          <aside class="sidebar sidebar--default tags">
+            <div class="sidebar__title-wrapper">
+              <h3 class="sidebar__title">Теги</h3>
+            </div>
+            <!-- /.sidebar__title-wrapper -->
+            <div class="tags__tags-wrapper">
+              <a href="#" class="tag tags__tag">Forest</a>
+              <a href="#" class="tag tags__tag">Hover Tag</a>
+              <a href="#" class="tag tags__tag">Nature</a>
+              <a href="#" class="tag tags__tag">Recreation</a>
+              <a href="#" class="tag tags__tag">Tent</a>
+              <a href="#" class="tag tags__tag">Fresh air</a>
+              <a href="#" class="tag tags__tag">Summer</a>
+              <a href="#" class="tag tags__tag">Mountains</a>
+              <a href="#" class="tag tags__tag">Wood</a>
+              <a href="#" class="tag tags__tag">Map</a>
+              <a href="#" class="tag tags__tag">Sun</a>
+              <a href="#" class="tag tags__tag">Wild animals</a>
+              <a href="#" class="tag tags__tag">Night</a>
+            </div>
+            <!-- /.tags__tags-wrapper -->
+          </aside>
+          <article class="links-post posts-wrapper__links-post">
+            <h3 class="links-post__title">Наши соцсети</h3>
+            <div class="links-post__icon-wrapper">
+              <div class="links-post__icon"></div>
+              <!-- /.links-post__icon -->
+            </div>
+            <!-- /.links-post__icon-wrapper -->
+            <div class="links-post__icon-wrapper">
+              <div class="links-post__icon"></div>
+              <!-- /.links-post__icon -->
+            </div>
+            <!-- /.links-post__icon-wrapper -->
+            <div class="links-post__icon-wrapper">
+              <div class="links-post__icon"></div>
+              <!-- /.links-post__icon -->
+            </div>
+            <!-- /.links-post__icon-wrapper -->
+          </article>
+          <!-- /.links-post -->
+        </div>
+        <!-- /.posts-wrapper__content -->
+      </div>
+      <!-- /.posts-wrapper -->
+    </section>
+    <!-- /.posts -->
   <script src="vendors~main.f0a210c57659864edb8d.js"></script><script src="main.a5445d8ab5c04a45000c.js"></script></body>
 </html>
