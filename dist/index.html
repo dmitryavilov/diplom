@@ -6,11 +6,20 @@
     <title>Universal - Main</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link href="vendors~main.4dbfd109b39751205ade.css" rel="stylesheet"><link href="main.e98310cfe5f72753af7d.css" rel="stylesheet"></head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  <link href="vendors~main.21ff2a0a736a7da6078c.css" rel="stylesheet"><link href="main.6cf76f7fc7a327eeaab1.css" rel="stylesheet"></head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="logo header__logo"></div>
+      <div class="container header__wrapper">
+        <a href="index.html" class="logo header__logo">
+          <svg class="logo__img">
+            <use xlink:href="images/sprite.svg#logo"></use>
+          </svg>
+        </a>
         <!-- /.logo header__logo -->
         <nav class="navigation header__navigation">
           <ul class="navigation__list">
@@ -46,27 +55,77 @@
           <!-- /.navigation__list -->
         </nav>
         <!-- /.navigation header__navigation -->
+        <!-- /.mobile-navigation -->
         <form class="search-form header__search-form">
-          <input type="search" class="search-form__input" />
+          <input placeholder="Поиск" type="search" class="search-form__input" />
         </form>
         <!-- /.search-form header__search-form -->
+        <div class="mobile-button header__mobile-button">
+          <span class="mobile-button__line"></span>
+          <span class="mobile-button__line"></span>
+          <span class="mobile-button__line"></span>
+        </div>
       </div>
       <!-- /.container -->
     </header>
     <!-- /.header -->
-    <main class="main">
+    <nav class="navigation navigation--mobile navigation--visible">
+      <form
+        class="search-form navigation__search-form search-form--mobile search-form--visible"
+      >
+        <input placeholder="Поиск" type="search" class="search-form__input" />
+      </form>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Статьи</a>
+        </li>
+        <!-- /.navigation__item -->
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Новости</a>
+        </li>
+        <!-- /.navigation__item -->
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Курсы</a>
+        </li>
+        <!-- /.navigation__item -->
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">HTML</a>
+        </li>
+        <!-- /.navigation__item -->
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">CSS</a>
+        </li>
+        <!-- /.navigation__item -->
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">JavaScript</a>
+        </li>
+        <!-- /.navigation__item -->
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Web Design</a>
+        </li>
+        <!-- /.navigation__item -->
+      </ul>
+      <!-- /.navigation__list -->
+    </nav>
+    <main class="main main--top">
       <div class="container">
-        <div class="main-information">
+        <div class="main-information main__main-information">
           <div class="main-information__content">
             <img
-              src="#"
-              alt="Main-information: Background"
+              src="images/bg.jpg"
+              alt="Основная информация: Фон"
               class="main-bg main-information__bg"
             />
-            <div class="main-information__info">
+            <div class="main-information__blur"></div>
+            <div class="main-information__sm-btn">Рекомендуемое</div>
+            <div class="main-information__info main-information__info--active">
               <div class="main-author main-information__author">
-                <img src="#" alt="Author: avatar" class="main-author__avatar" />
-                <div class="main-author__text-wrapper">
+                <img
+                  src="images/mainAvatar.png"
+                  alt="Автор: аватар"
+                  class="main-author__avatar"
+                />
+                <div class="main-author__text-wrapper ">
                   <span class="main-author__name">Давид Гуров</span>
                   <span class="main-author__profession">Разработчик</span>
                 </div>
@@ -77,63 +136,221 @@
               <h1 class="main-information__title">
                 Расширение Chrome защищает от атак
               </h1>
-              <button class="button main-information__button button--default">
-                Читать далее
-                <div class="button__icon"></div>
-              </button>
+              <a class="main-information__button-link">
+                <div class="button main-information__button button--default">
+                  <span class="button__text main-information__button-text">Читать далее</span>
+                  <svg class="button__icon main-information__button-icon">
+                    <use xlink:href="images/sprite.svg#Arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <!-- /.main-information__info -->
+            <div class="main-information__info">
+              <div class="main-author main-information__author">
+                <img
+                  src="images/mainAvatar.png"
+                  alt="Автор: аватар"
+                  class="main-author__avatar"
+                />
+                <div class="main-author__text-wrapper">
+                  <span class="main-author__name">Владислав Потапов</span>
+                  <span class="main-author__profession">Разработчик</span>
+                </div>
+                <!-- /.main-author__text-wrapper -->
+              </div>
+              <!-- /.main-author main-information__author -->
+              <p class="main-information__description main-information__title-sidebar--css">CSS</p>
+              <h1 class="main-information__title">
+                Как использовать CSS float после того, как вышел Flexbox
+              </h1>
+              <a class="main-information__button-link">
+                <div class="button main-information__button button--default">
+                  <span class="button__text main-information__button-text">Читать далее</span>
+                  <svg class="button__icon main-information__button-icon">
+                    <use xlink:href="images/sprite.svg#Arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <!-- /.main-information__info -->
+            <div class="main-information__info">
+              <div class="main-author main-information__author">
+                <img
+                  src="images/mainAvatar.png"
+                  alt="Автор: аватар"
+                  class="main-author__avatar"
+                />
+                <div class="main-author__text-wrapper">
+                  <span class="main-author__name">Артём Исламов</span>
+                  <span class="main-author__profession">JS программист</span>
+                </div>
+                <!-- /.main-author__text-wrapper -->
+              </div>
+              <!-- /.main-author main-information__author -->
+              <p class="main-information__description">JavaScript</p>
+              <h1 class="main-information__title">
+                На каком стандарте писать скрипты, если я фрилансер
+              </h1>
+              <a class="main-information__button-link">
+                <div class="button main-information__button button--default">
+                  <span class="button__text main-information__button-text">Читать далее</span>
+                  <svg class="button__icon main-information__button-icon">
+                    <use xlink:href="images/sprite.svg#Arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <!-- /.main-information__info -->
+            <div class="main-information__info">
+              <div class="main-author main-information__author">
+                <img
+                  src="images/mainAvatar.png"
+                  alt="Автор: аватар"
+                  class="main-author__avatar"
+                />
+                <div class="main-author__text-wrapper">
+                  <span class="main-author__name">Антон Иванов</span>
+                  <span class="main-author__profession">Разработчик</span>
+                </div>
+                <!-- /.main-author__text-wrapper -->
+              </div>
+              <!-- /.main-author main-information__author -->
+              <p class="main-information__description main-information__title-sidebar--html">HTML</p>
+              <h1 class="main-information__title">
+                Правильно вставляем картинку на сайт для Retina дисплея
+              </h1>
+              <a class="main-information__button-link">
+                <div class="button main-information__button button--default">
+                  <span class="button__text main-information__button-text">Читать далее</span>
+                  <svg class="button__icon main-information__button-icon">
+                    <use xlink:href="images/sprite.svg#Arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <!-- /.main-information__info -->
+            <div class="main-information__info">
+              <div class="main-author main-information__author">
+                <img
+                  src="images/mainAvatar.png"
+                  alt="Автор: аватар"
+                  class="main-author__avatar"
+                />
+                <div class="main-author__text-wrapper">
+                  <span class="main-author__name">Виктор Карел</span>
+                  <span class="main-author__profession">Веб-Дизайнер</span>
+                </div>
+                <!-- /.main-author__text-wrapper -->
+              </div>
+              <!-- /.main-author main-information__author -->
+              <p class="main-information__description main-information__title-sidebar--web-design">Web-design</p>
+              <h1 class="main-information__title">
+                ТОП-10 плагинов для Figma
+              </h1>
+              <a class="main-information__button-link">
+                <div class="button main-information__button button--default">
+                  <span class="button__text main-information__button-text">Читать далее</span>
+                  <svg class="button__icon main-information__button-icon">
+                    <use xlink:href="images/sprite.svg#Arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <!-- /.main-information__info -->
+            <div class="main-information__info">
+              <div class="main-author main-information__author">
+                <img
+                  src="images/mainAvatar.png"
+                  alt="Автор: аватар"
+                  class="main-author__avatar"
+                />
+                <div class="main-author__text-wrapper">
+                  <span class="main-author__name">Владислав Потапов</span>
+                  <span class="main-author__profession">Разработчик</span>
+                </div>
+                <!-- /.main-author__text-wrapper -->
+              </div>
+              <!-- /.main-author main-information__author -->
+              <p class="main-information__description main-information__title-sidebar--css">Css</p>
+              <h1 class="main-information__title">
+                Возможности CSS Grid Layout, которые уже можно применять
+              </h1>
+              <a class="main-information__button-link">
+                <div class="button main-information__button button--default">
+                  <span class="button__text main-information__button-text">Читать далее</span>
+                  <svg class="button__icon main-information__button-icon">
+                    <use xlink:href="images/sprite.svg#Arrow"></use>
+                  </svg>
+                </div>
+              </a>
             </div>
             <!-- /.main-information__info -->
           </div>
           <!-- /.main-information__content -->
           <aside class="sidebar main-information__sidebar sidebar--default">
-            <div class="sidebar__title-wrapper">
-              <h3 class="sidebar__title">Рекомендуем</h3>
+            <div class="sidebar__title-wrapper main-information__sidebar-title">
+              <h3 class="sidebar__title main-information__sidebar-title">
+                Рекомендуем
+              </h3>
             </div>
+            <svg class="main-information__mobile-icon">
+              <use xlink:href="images/sprite.svg#cancel"></use>
+            </svg>
             <!-- /.sidebar__title-wrapper -->
-            <a href="#" class="main-information__sidebar-link">
               <div class="main-information__sidebar-tile">
-                <h4 class="main-information__sidebar-title">Css</h4>
+                <h4
+                  class="main-information__title-sidebar main-information__title-sidebar--css"
+                >
+                  Css
+                </h4>
                 <p class="main-information__sidebar-description">
                   Как использовать CSS float после того, как вышел Flexbox
                 </p>
               </div>
-            </a>
             <!-- /.main-information__sidebar-tile -->
-            <a href="#" class="main-information__sidebar-link">
               <div class="main-information__sidebar-tile">
-                <h4 class="main-information__sidebar-title">JavaScript</h4>
+                <h4
+                  class="main-information__title-sidebar main-information__title-sidebar--js"
+                >
+                  JavaScript
+                </h4>
                 <p class="main-information__sidebar-description">
                   На каком стандарте писать скрипты, если я фрилансер
                 </p>
               </div>
-            </a>
             <!-- /.main-information__sidebar-tile -->
-            <a href="#" class="main-information__sidebar-link">
               <div class="main-information__sidebar-tile">
-                <h4 class="main-information__sidebar-title">Html</h4>
+                <h4
+                  class="main-information__title-sidebar main-information__title-sidebar--html"
+                >
+                  Html
+                </h4>
                 <p class="main-information__sidebar-description">
                   Правильно вставляем картинку на сайт для Retina дисплея
                 </p>
               </div>
-            </a>
             <!-- /.main-information__sidebar-tile -->
-            <a href="#" class="main-information__sidebar-link">
               <div class="main-information__sidebar-tile">
-                <h4 class="main-information__sidebar-title">Web-design</h4>
+                <h4
+                  class="main-information__title-sidebar main-information__title-sidebar--web-design"
+                >
+                  Web-design
+                </h4>
                 <p class="main-information__sidebar-description">
                   ТОП-10 плагинов для Figma
                 </p>
               </div>
-            </a>
             <!-- /.main-information__sidebar-tile -->
-            <a href="#" class="main-information__sidebar-link">
               <div class="main-information__sidebar-tile">
-                <h4 class="main-information__sidebar-title">Css</h4>
+                <h4
+                  class="main-information__title-sidebar main-information__title-sidebar--css"
+                >
+                  Css
+                </h4>
                 <p class="main-information__sidebar-description">
                   Возможности CSS Grid Layout, которые уже можно применять
                 </p>
-              </div>
-            </a>
             <!-- /.main-information__sidebar-tile -->
           </aside>
           <!-- /.main-information__sidebar -->
@@ -141,41 +358,52 @@
         <!-- /.main-information -->
       </div>
       <!-- /.container -->
+      <div class="main__black-bg"></div>
+      <!-- /.main__black-bg -->
     </main>
     <!-- /.main -->
-    <section class="chips">
+    <section class="chips chips--top">
       <div class="container">
-        <div class="chips-wrapper">
-          <div class="chip chips-wrapper__chip">
-            <a href="#" class="chip__text">25 способов настроить слайдер</a>
-            <img src="#" alt="Chip: Image" class="chip__img" />
+        <div class="chips-wrapper chips__chips-wrapper">
+          <div class="chips-wrapper__content">
+            <div class="chip chips-wrapper__chip">
+              <a href="#" class="chip__text">25 способов настроить слайдер</a>
+              <img src="images/ch1.jpg" alt="Фишка: Картинка" class="chip__img" />
+            </div>
+            <!-- /.chip chips-wrapper__chip -->
+            <div class="chips-wrapper__border"></div>
+            <!-- /.chips-wrapper__border -->
+            <div class="chip chips-wrapper__chip">
+              <a href="#" class="chip__text">Главные фишки фрилансера</a>
+              <img src="images/ch2.jpg" alt="Фишка: Картинка" class="chip__img" />
+            </div>
+            <!-- /.chip chips-wrapper__chip -->
+            <div class="chips-wrapper__border"></div>
+            <!-- /.chips-wrapper__border -->
+            <div class="chip chips-wrapper__chip">
+              <a href="#" class="chip__text"
+                >Техника управления временем&nbsp;"Помодоро"
+              </a>
+              <img src="images/ch3.jpg" alt="Фишка: Картинка" class="chip__img" />
+            </div>
+            <!-- /.chip chips-wrapper__chip -->
+            <div class="chips-wrapper__border"></div>
+            <!-- /.chips-wrapper__border -->
+            <div class="chip chips-wrapper__chip">
+              <a href="#" class="chip__text">Что нужно знать о Git и GitHub</a>
+              <img src="images/ch4.jpg" alt="Фишка: Картинка" class="chip__img" />
+            </div>
+            <!-- /.chip chips-wrapper__chip -->
+            <div class="chips-wrapper__border"></div>
           </div>
-          <!-- /.chip chips-wrapper__chip -->
-          <div class="chip chips-wrapper__chip">
-            <a href="#" class="chip__text">Главные фишки фрилансера</a>
-            <img src="#" alt="Chip: Image" class="chip__img" />
-          </div>
-          <!-- /.chip chips-wrapper__chip -->
-          <div class="chip chips-wrapper__chip">
-            <a href="#" class="chip__text"
-              >Техника управления временем "Помодоро
-            </a>
-            <img src="#" alt="Chip: Image" class="chip__img" />
-          </div>
-          <!-- /.chip chips-wrapper__chip -->
-          <div class="chip chips-wrapper__chip">
-            <a href="#" class="chip__text">Что нужно знать о Git и GitHub</a>
-            <img src="#" alt="Chip: Image" class="chip__img" />
-          </div>
-          <!-- /.chip chips-wrapper__chip -->
         </div>
         <!-- /.chips-wrapper -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.chips -->
-    <section class="posts">
-      <div class="posts-wrapper">
+    <section class="posts posts--top">
+      <div class="container posts-wrapper">
         <div class="posts-wrapper__content">
           <article class="article post-wrapper__article">
             <img
@@ -268,7 +496,7 @@
             </p>
           </article>
           <!-- /.instruments-post -->
-          <article class="post post-wrapper__post">
+          <article class="post post-wrapper__post post--references">
             <h3 class="post__title">Удачные референсы</h3>
             <p class="post__description">
               Как выбрать подходящие исходники, если вы ищете идею для
@@ -277,7 +505,7 @@
             <span class="post__date">15 октября</span>
           </article>
           <!-- /.post post-wrapper__post -->
-          <article class="post post-wrapper__post">
+          <article class="post post-wrapper__post post--bosses">
             <h3 class="post__title">Заказчики - мудаки?</h3>
             <p class="post__description">
               Как защититься от бесконечных правок на этапе сдачи проекта
@@ -285,7 +513,7 @@
             <span class="post__date">20 октября</span>
           </article>
           <!-- /.post post-wrapper__post -->
-          <article class="post post-wrapper__post">
+          <article class="post post-wrapper__post post--work">
             <h3 class="post__title">Работа без стресса - это...</h3>
             <p class="post__description">
               Обустройте свое рабочее место так, чтобы не испытывать раздражение
@@ -294,7 +522,7 @@
             <span class="post__date">26 октября</span>
           </article>
           <!-- /.post post-wrapper__post -->
-          <article class="post post-wrapper__post">
+          <article class="post post-wrapper__post post--methods">
             <h3 class="post__title">Бесплатные методы...</h3>
             <p class="post__description">
               Как не платить за софт, если у вас есть студенческий билет высшего
@@ -713,5 +941,5 @@
       <!-- /.container -->
     </section>
     <!-- /.rubrics -->
-  <script src="vendors~main.f0a210c57659864edb8d.js"></script><script src="main.c42e2db299f78fe205c1.js"></script></body>
+  <script src="vendors~main.f0a210c57659864edb8d.js"></script><script src="main.664a81a56a240db297ee.js"></script></body>
 </html>

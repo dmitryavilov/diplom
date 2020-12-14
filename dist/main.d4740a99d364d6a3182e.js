@@ -166,14 +166,38 @@ eval("\n\n//# sourceURL=webpack:///./babel.js?");
 
 /***/ }),
 
+/***/ "./img/search.svg":
+/*!************************!*\
+  !*** ./img/search.svg ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/search.svg\");\n\n//# sourceURL=webpack:///./img/search.svg?");
+
+/***/ }),
+
+/***/ "./img/sprite.svg":
+/*!************************!*\
+  !*** ./img/sprite.svg ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/sprite.svg\");\n\n//# sourceURL=webpack:///./img/sprite.svg?");
+
+/***/ }),
+
 /***/ "./sass/style.sass":
 /*!*************************!*\
   !*** ./sass/style.sass ***!
   \*************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./sass/style.sass?");
+eval("throw new Error(\"Module build failed (from ../node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleBuildError: Module build failed (from ../node_modules/sass-loader/dist/cjs.js):\\nSassError: property \\\"url\\\" must be followed by a ':'\\n        on line 7 of src/sass/_fonts.sass\\n        from line 7 of D:\\\\websites\\\\diplom\\\\src\\\\sass\\\\style.sass\\n>>             url('Lato-Hairline.eot?#iefix') format('embedded-opentype'),\\n\\n   ------------^\\n\\n    at D:\\\\websites\\\\diplom\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:316:20\\n    at D:\\\\websites\\\\diplom\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:367:11\\n    at D:\\\\websites\\\\diplom\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:233:18\\n    at context.callback (D:\\\\websites\\\\diplom\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:111:13)\\n    at Object.callback (D:\\\\websites\\\\diplom\\\\node_modules\\\\sass-loader\\\\dist\\\\index.js:73:7)\\n    at Object.done [as callback] (D:\\\\websites\\\\diplom\\\\node_modules\\\\neo-async\\\\async.js:8069:18)\\n    at options.error (D:\\\\websites\\\\diplom\\\\node_modules\\\\node-sass\\\\lib\\\\index.js:294:32)\");\n\n//# sourceURL=webpack:///./sass/style.sass?");
 
 /***/ }),
 
@@ -185,7 +209,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./sass
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../babel */ \"./babel.js\");\n/* harmony import */ var _babel__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _sass_style_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sass/style.sass */ \"./sass/style.sass\");\n/* harmony import */ var _sass_style_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_style_sass__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var wowjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! wowjs */ \"../node_modules/wowjs/dist/wow.js\");\n/* harmony import */ var wowjs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(wowjs__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nvar wow = new wowjs__WEBPACK_IMPORTED_MODULE_2___default.a.WOW({\n  live: false\n}).init();\n\n//# sourceURL=webpack:///./scripts/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../babel */ \"./babel.js\");\n/* harmony import */ var _babel__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _sass_style_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sass/style.sass */ \"./sass/style.sass\");\n/* harmony import */ var _sass_style_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_style_sass__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var wowjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! wowjs */ \"../node_modules/wowjs/dist/wow.js\");\n/* harmony import */ var wowjs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(wowjs__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _img_sprite_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/sprite.svg */ \"./img/sprite.svg\");\n/* harmony import */ var _img_search_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/search.svg */ \"./img/search.svg\");\n\n\n // Картинки\n\n\n\nvar wow = new wowjs__WEBPACK_IMPORTED_MODULE_2___default.a.WOW({\n  live: false\n}).init();\n\n//# sourceURL=webpack:///./scripts/index.js?");
 
 /***/ }),
 

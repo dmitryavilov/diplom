@@ -1,0 +1,258 @@
+@keyframes tileOn
+    100%
+        opacity: 1
+@keyframes mainBtnPulse
+    0%
+        box-shadow: 0 0 3px $blue
+    50%
+        box-shadow: 0 0 14px $blue
+    100%
+        box-shadow: 0 0 3px $blue
+.main
+    background-color: #EDEFF0
+    &__black-bg
+        width: 100%
+        height: 474px
+        top: 0px
+        left: 0
+        right: 0
+        z-index: 1
+        position: absolute
+        background-color: #262D33
+    &--top
+        padding-top: 30px
+        z-index: 2
+        position: relative
+    &-information
+        max-width: 1140px
+        display: flex
+        height: 570px
+        border-radius: 10px
+        overflow: hidden
+        display: flex
+        justify-content: space-between
+        &__sm-btn
+            width: 160px
+            height: 30px
+            color: white
+            display: none
+            align-items: center
+            justify-content: center
+            position: absolute
+            top: 30%
+            right: 0
+            z-index: 7
+            background-color: rgba(0, 0, 0, 0.4)
+            border-left: 12px solid $blue
+            animation: mainBtnPulse
+            animation-iteration-count: infinite
+            animation-duration: 2.5s
+        &__button-text
+            max-width: 88px
+
+        &__content
+            position: relative
+            height: 100%
+            flex-basis: 877px
+            overflow: hidden
+        &__info
+            padding-left: 55px
+            padding-top: 55px
+            position: relative
+            display: none
+            z-index: 5
+            opacity: 0
+            &--active
+                display: block
+                animation: tileOn 1.5s
+                animation-fill-mode: forwards
+        &__blur
+            display: block
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            bottom: 0
+            right: 0
+            z-index: 4
+            position: absolute
+            background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+        &__description
+            font-family: Lato
+            font-style: normal
+            font-weight: 900
+            font-size: 12px
+            line-height: 15px
+            color: $blue
+            text-transform: uppercase
+            letter-spacing: 0.5px
+            margin-top: 145px
+        &__title
+            font-family: $roboto
+            font-style: normal
+            font-weight: bold
+            font-size: 40px
+            line-height: 50px
+            display: flex
+            align-items: center
+            color: #FFFFFF
+            max-width: 598px
+            margin-top: 20px
+            max-height: 175px
+            padding-bottom: 5px
+            position: relative
+            transform: translateY(-20px)
+            padding-top: 20px
+            overflow-x: hidden
+            overflow-y: auto
+        &__mobile-icon
+            top: 10px
+            left: -37px
+            fill: white
+            position: absolute
+            width: 15px
+            height: 15px
+            display: none
+        &__button
+            max-width: 156px
+            margin-top: 23px
+            &-icon
+                margin-left: 7px
+        &__sidebar
+            flex-basis: 263px
+            background-color: #fff
+            border-radius: 0px !important
+            position: relative
+            z-index: 10
+            &-tile
+                width: 100%
+                height: 99px
+                padding-left: 25px
+                border: 1px solid #D9DADB
+                border-width: 1px 0 0 1px
+                transition: 0.3s
+                cursor: pointer
+                &--active
+                    background-color: #EDEFF0
+                &:last-child h4
+                    padding-top: 21px
+            &-title
+                border-width: 0px !important
+            &-link
+                text-decoration: none
+            &-description
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 20px
+                color: #4B5157
+                max-width: 213px
+                max-height: 40px
+                overflow-y: auto
+        &__title-sidebar
+            padding-top: 17px
+            max-width: 160px
+            text-align: left
+            white-space: nowrap
+            overflow-x: auto
+            text-decoration: none
+            font-style: normal
+            font-weight: 900
+            font-size: 12px
+            line-height: 15px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            padding-bottom: 8px
+            &--css
+                color: #3BBDC4
+            &--js
+                color: $blue
+            &--html
+                color: #AC8EE3
+            &--web-design
+                color: #FFA34D
+    &-author
+        display: flex
+        align-items: center
+        &__avatar
+            width: 45px
+            height: 45px
+            border-radius: 50%
+            object-fit: cover
+        &__text-wrapper
+            display: flex
+            flex-direction: column
+            height: 35px
+            justify-content: space-between
+            padding-left: 10px
+        &__name
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: white
+        &__profession
+            font-style: normal
+            font-weight: 300
+            font-size: 12px
+            line-height: 15px
+            color: gray
+    &-bg
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        object-fit: cover
+        position: absolute
+        z-index: 3
+.button
+    background-color: $blue
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    color: white
+    display: flex
+    border: none
+    border-radius: 20px
+    cursor: pointer
+    text-overflow: ellipsis
+    overflow-x: hidden
+    white-space: nowrap
+    &--default
+        padding: 10px 20px 10px 20px
+    &__icon
+        width: 20px
+        height: 20px
+        fill: white
+    &__text
+        transform: translateY(1px)
+        text-overflow: ellipsis
+        overflow: hidden
+        white-space: nowrap
+.sidebar
+    max-width: 263px
+    &--default
+        border-radius: 10px
+    &__title
+        padding-left: 25px
+        padding-top: 20px
+        padding-bottom: 20px
+        text-transform: uppercase
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: 0.5px
+        border-bottom: 1px solid gray
+        overflow-x: auto
+        white-space: nowrap
+        max-width: 235px
+
+@media (min-width: 992px)
+    .main-information
+        &__sidebar-tile
+            &:hover
+                background-color: #EDEFF0

@@ -1,0 +1,51 @@
+.chips
+    &--top
+        padding-top: 30px
+        background-color: #EDEFF0
+    &-wrapper
+        width: 100%
+        background: #30363D
+        border-radius: 10px
+        min-height: 130px
+        &__content
+            padding-top: 25px
+            display: grid
+            justify-content: center
+            align-items: center
+            grid-template-columns: 234px 1px 234px 1px 234px 1px 234px
+            grid-column-gap: 25px
+        &__border
+            height: 75px
+            width: 1px
+            background-color: #4B5157
+            &:last-child
+                display: none
+.chip
+    display: flex
+    height: 75px
+    align-items: center
+    justify-content: space-between
+    &__text
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        max-height: 40px
+        overflow-x: hidden
+        overflow-y: auto
+        color: white
+        text-decoration: none
+        width: 152px
+        transition: 0.4s
+    &:nth-child(3) p
+        width: 169px
+    &__img
+        width: 65px
+        height: 65px
+        object-fit: cover
+
+@media (min-width: 992px)
+    .chip
+        &__text
+            &:hover
+                color: $yellow

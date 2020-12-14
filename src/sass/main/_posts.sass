@@ -1,0 +1,37 @@
+.posts
+    background-color: #EDEFF0
+    &-wrapper
+        &__content
+            display: grid
+            grid-template-columns: repeat(4, 263px)
+            grid-template-rows: repeat(4, 170px)
+            justify-content: space-between
+            grid-row-gap: 30px
+
+    &--top
+        padding-top: 30px
+.article
+    background-color: #fff
+    grid-column: span 2
+    grid-row: span 2
+.real-project
+    grid-row: span 2
+    background-color: #fff
+.instruments-post
+    grid-row: 3/5
+    background-color: #fff
+
+.post
+    background-color: #fff
+    &--references
+        grid-row: 3/4
+        grid-column: 2/3
+    &--bosses
+        grid-row: 3/4
+        grid-column: 3/4
+    &--work
+        grid-row: 4/5
+        grid-column: 2/3
+    &--methods
+        grid-row: 4/5
+        grid-column: 3/4

@@ -1,0 +1,68 @@
+.header
+    background-color: #262D33
+    &__wrapper
+        display: flex
+        align-items: center
+        min-height: 70px
+    &__logo
+        margin-right: auto
+    &__search-form
+        margin-left: auto
+.logo
+    &__img
+        width: 163px
+        height: 40px
+.navigation
+    flex-basis: 531px
+    &__list
+        display: grid
+        justify-content: space-between
+        width: 100%
+        grid-template-columns: repeat(7, max-content)
+        grid-row-gap: 3px
+    &__link
+        font-style: normal
+        font-weight: 700
+        font-size: 14px
+        line-height: 20px
+        color: white
+        text-decoration: none
+        transition: 0.4s
+    &--mobile
+        display: none
+
+.search-form
+    &__input
+        padding-left: 25px
+        padding-right: 40px
+        width: 263px
+        height: 39px
+        background: #656B70
+        border-radius: 10px
+        border: none
+        background-image: url('../img/header/search.svg')
+        background-repeat: no-repeat
+        background-position: 218px center
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: white
+        &::placeholder
+            color: #939699
+.mobile-button
+    width: 23px
+    height: 16px
+    display: none
+    flex-direction: column
+    justify-content: space-between
+    cursor: pointer
+    &__line
+        height: 2px
+        width: 100%
+        background-color: white
+@media (min-width: 992px)
+    .navigation
+        &__link
+            &:hover
+                color: $yellow
