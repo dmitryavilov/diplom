@@ -1,5 +1,6 @@
 .posts
     background-color: #EDEFF0
+    padding-bottom: 60px
     &-wrapper
         &__content
             display: grid
@@ -8,21 +9,264 @@
             justify-content: space-between
             grid-row-gap: 30px
 
+            & article
+                border-radius: 10px
+        &__sidebar
+            background-color: #fff
+            grid-row: 2/4
+
     &--top
         padding-top: 30px
 .article
     background-color: #fff
     grid-column: span 2
     grid-row: span 2
+    position: relative
+    overflow: hidden
+    &__text-wrapper
+        padding-left: 35px
+        position: relative
+        z-index: 2
+        padding-top: 35px
+    &__car
+        position: absolute
+        z-index: 1
+        right: 0
+        top: 15px
+    &__footer
+        position: absolute
+        bottom: 0
+        left: 0
+        height: 55px
+        width: 100%
+        border-top: 1px solid #d9dadb
+        display: flex
+        align-items: center
+        right: 0
+    &__category
+        font-style: normal
+        font-weight: 900
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: #6E99AE
+    &__title
+        font-family: $roboto
+        font-style: normal
+        font-weight: bold
+        font-size: 25px
+        margin: 0
+        padding: 0
+        overflow-x: hidden
+        line-height: 30px
+        overflow-y: hidden
+        color: #262D33
+        &-wrapper
+            margin-top: 20px
+            overflow-y: auto
+            max-width: 245px
+            height: 95px
+    &__description
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        max-width: 228px
+        max-height: 80px
+        overflow-y: auto
+        overflow-x: hidden
+        color: #4B5157
+        margin-top: 18px
+    &-comment
+        flex-basis: 444px
+        max-height: 30px
+        display: flex
+        align-items: center
+        &__img
+            width: 30px
+            height: 30px
+            object-fit: cover
+            border-radius: 50%
+        &__name
+            font-style: normal
+            font-weight: 900
+            font-size: 14px
+            line-height: 20px
+            color: $darkGray
+            margin-left: 7px
+            &::after
+                content: ':'
+        &__text
+            color: $lightGray
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            margin-left: 5px
+            max-width: 290px
+            overflow-x: hidden
+            white-space: nowrap
+            text-overflow: ellipsis
+    &__article-comment
+        margin-left: 35px
 .real-project
     grid-row: span 2
     background-color: #fff
+    position: relative
+    overflow: hidden
+    padding-left: 25px
+    &__mark
+        max-width: 92px
+        padding: 5px 4px
+        padding-top: 6px
+        padding-bottom: 4px
+        font-size: 12px
+        line-height: 15px
+        position: relative
+        z-index: 3
+        top: 19px
+        display: flex
+        justify-content: center
+    &__bg
+        position: absolute
+        top: -2px
+        left: 0
+        right: 0
+        bottom: 0
+        width: 100%
+        height: calc( 100% + 2px )
+        object-fit: cover
+        z-index: 1
+        &-wrapper
+            &::after
+                content: ''
+                position: absolute
+                left: 0
+                top: 0
+                bottom: 0
+                right: 0
+                background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+                z-index: 2
+    &__author
+        position: relative
+        z-index: 3
+        display: flex
+        align-items: center
+        margin-top: 27px
+        &-avatar
+            width: 45px
+            height: 45px
+            object-fit: cover
+            border-radius: 50%
+        &-name
+            flex-basis: 100%
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+    &__link
+        color: white
+    &__counter span
+        color: white
+        opacity: 0.4
+
+    &__counter svg
+        fill: white
+        opacity: 0.4
+    &__counter
+        &:nth-of-type(1)
+            margin-right: 7px
+    &__date
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        opacity: 0.4
+        color: white
+        margin-right: 7px
+    &__text-wrapper
+        display: flex
+        flex-wrap: wrap
+        margin-left: 10px
+        height: 37px
+    &__title
+        color: white
+        font-family: $roboto
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 25px
+        max-width: 203px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        overflow-x: hidden
+        &-wrapper
+            max-height: 78px
+            overflow-y: auto
+            z-index: 3
+            position: relative
+            margin-top: 157px
+    &__category
+        color: #E7D9FF
+        font-style: normal
+        font-weight: 900
+        font-size: 12px
+        line-height: 15px
+        z-index: 3
+        position: relative
+        top: 134px
+        letter-spacing: 0.5px
+        text-transform: uppercase
 .instruments-post
     grid-row: 3/5
     background-color: #fff
+    overflow: hidden
+    &__bg
+        width: 100%
+        height: 275px
+        object-fit: cover
+    &__description
+        font-family: $roboto
+        color: $darkGray
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 25px
+        &-wrapper
+            margin-left: 25px
+            margin-top: 15px
+            max-width: 170px
+            max-height: 55px
+            overflow-y: auto
+            overflow-x: hidden
 
 .post
     background-color: #fff
+    padding-top: 25px
+    padding-left: 25px
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 25px
+        font-family: $roboto
+        color: $darkGray
+        white-space: nowrap
+        max-width: 225px
+        text-overflow: ellipsis
+        overflow: hidden
+    &__description
+        margin-top: 5px
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: $darkGray
+        max-width: 213px
+        height: 60px
+        overflow-x: hidden
+        overflow-y: auto
     &--references
         grid-row: 3/4
         grid-column: 2/3
@@ -35,3 +279,223 @@
     &--methods
         grid-row: 4/5
         grid-column: 3/4
+    &__date
+        position: relative
+        top: 10px
+.counter
+    display: flex
+    align-items: center
+    &--default
+        fill: #BCBFC2
+        color: #939699
+    &__icon
+        width: 15px
+        height: 15px
+        margin-right: 5px
+        cursor: pointer
+        transition: 0.4s
+        &--comment
+            transform: translateY(-1px)
+    &__number
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+.mark
+    background-color: $lightGreen
+    color: white
+    font-style: normal
+    font-weight: normal
+    border-radius: 3px
+    &__text
+        max-width: 92px
+        white-space: nowrap
+        overflow-x: hidden
+        text-overflow: ellipsis
+.date
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: #939699
+.checklist
+    background-color: #3BBDC4
+    background-image: url('../img/posts/file.svg')
+    background-repeat: no-repeat
+    background-position: 172px 20px
+    &__footer-icon
+        width: 20px
+        height: 20px
+        fill: white
+    &__footer-link
+        display: flex
+        align-items: center
+        width: 83px
+        justify-content: space-between
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        text-decoration: none
+        color: white
+    &__text-wrapper
+        padding-top: 25px
+        padding-left: 25px
+    &__title
+        color: white
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 25px
+        font-family: $roboto
+        &-wrapper
+            max-width: 213px
+            max-height: 54px
+            overflow-x: hidden
+            overflow-y: auto
+            margin-bottom: 10px
+    &__file
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: #C1F4F5
+.sidebar
+    position: relative
+    &__footer
+        height: 45px
+        border-top: 1px solid #E5E5E5
+        position: absolute
+        bottom: 0
+        right: 0
+        left: 0
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+
+.tags
+    &__tags-wrapper
+        margin-top: 22px
+        margin-left: 25px
+        max-width: 238px
+        overflow-y: auto
+        max-height: 270px
+        display: flex
+        flex-wrap: wrap
+        font-family: Lato
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+    &__tag
+        margin-bottom: 14px
+        margin-right: 10px
+.tag
+    max-width: 115px
+    overflow-x: hidden
+    white-space: nowrap
+    padding: 6px 14.5px 3px
+    text-decoration: none
+    border: 1px solid #D9DADB
+    border-radius: 5px
+    text-overflow: ellipsis
+    color: $darkGray
+    cursor: pointer
+.links-post
+    background-color: #fff
+    display: flex
+    align-items: center
+    flex-direction: column
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        max-width: 213px
+        white-space: nowrap
+        line-height: 25px
+        color: $darkGray
+        font-family: $roboto
+        overflow-x: hidden
+        overflow-y: hidden
+        text-overflow: ellipsis
+        &-wrapper
+            margin-top: 30px
+    &__icon
+        width: 20px
+        height: 20px
+        fill: white
+        &-bg
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: pointer
+            &--facebook
+                background-color: #4267B2
+            &--twitter
+                background-color: #1DA1F2
+            &--youtube
+                background-color: #FF0000
+    &__icons-wrapper
+        width: 190px
+        display: flex
+        justify-content: space-between
+        margin-top: 25px
+
+@media (min-width: 992px)
+    .counter
+        &__icon
+            &:hover
+                opacity: 0.6
+    .tag
+        transition: 0.2s
+        &:hover
+            background-color: #dfdfdf
+    .checklist
+        &__footer
+            &-icon
+                transition: 0.4s
+            &-link
+                transition: 0.4s
+            &:hover &-icon
+                fill: $yellow
+            &:hover &-link
+                color: $yellow
+    .links-post
+        &__icon
+            &-bg
+                transition: 0.4s
+                &--twitter:hover
+                    box-shadow: 0 0 17px #1DA1F2
+                &--youtube:hover
+                    box-shadow: 0 0 17px #FF0000
+                &--facebook:hover
+                    box-shadow: 0 0 17px #4267B2
+    .article
+        &__title
+            transition: 0.4s
+            &:hover
+                color: gray
+        &-comment
+            &__name
+                transition: 0.4s
+                &:hover
+                    color: gray
+    .real-project
+        &__link, &__title
+            transition: 0.4s
+            &:hover
+                color: $yellow
+    .instruments-post
+        &__description
+            transition: 0.4s
+            &:hover
+                color: gray
+    .post
+        &__title
+            transition: 0.4s
+            &:hover
+                color: gray

@@ -262,14 +262,111 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./img/search.svg":
-/*!************************!*\
-  !*** ./img/search.svg ***!
-  \************************/
+/***/ "./img/chips/ch1.jpg":
+/*!***************************!*\
+  !*** ./img/chips/ch1.jpg ***!
+  \***************************/
 /*! exports provided: default */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ../node_modules/file-loader/dist/cjs.js):\\nError: ENOENT: no such file or directory, open 'D:\\\\websites\\\\diplom\\\\src\\\\img\\\\search.svg'\");\n\n//# sourceURL=webpack:///./img/search.svg?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/ch1.jpg\");\n\n//# sourceURL=webpack:///./img/chips/ch1.jpg?");
+
+/***/ }),
+
+/***/ "./img/chips/ch2.jpg":
+/*!***************************!*\
+  !*** ./img/chips/ch2.jpg ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/ch2.jpg\");\n\n//# sourceURL=webpack:///./img/chips/ch2.jpg?");
+
+/***/ }),
+
+/***/ "./img/chips/ch3.jpg":
+/*!***************************!*\
+  !*** ./img/chips/ch3.jpg ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/ch3.jpg\");\n\n//# sourceURL=webpack:///./img/chips/ch3.jpg?");
+
+/***/ }),
+
+/***/ "./img/chips/ch4.jpg":
+/*!***************************!*\
+  !*** ./img/chips/ch4.jpg ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/ch4.jpg\");\n\n//# sourceURL=webpack:///./img/chips/ch4.jpg?");
+
+/***/ }),
+
+/***/ "./img/header/search.svg":
+/*!*******************************!*\
+  !*** ./img/header/search.svg ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/search.svg\");\n\n//# sourceURL=webpack:///./img/header/search.svg?");
+
+/***/ }),
+
+/***/ "./img/main/bg.jpg":
+/*!*************************!*\
+  !*** ./img/main/bg.jpg ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/bg.jpg\");\n\n//# sourceURL=webpack:///./img/main/bg.jpg?");
+
+/***/ }),
+
+/***/ "./img/main/mainAvatar.png":
+/*!*********************************!*\
+  !*** ./img/main/mainAvatar.png ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/mainAvatar.png\");\n\n//# sourceURL=webpack:///./img/main/mainAvatar.png?");
+
+/***/ }),
+
+/***/ "./img/posts/car.png":
+/*!***************************!*\
+  !*** ./img/posts/car.png ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/car.png\");\n\n//# sourceURL=webpack:///./img/posts/car.png?");
+
+/***/ }),
+
+/***/ "./img/posts/postAvatar.png":
+/*!**********************************!*\
+  !*** ./img/posts/postAvatar.png ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/postAvatar.png\");\n\n//# sourceURL=webpack:///./img/posts/postAvatar.png?");
 
 /***/ }),
 
@@ -304,7 +401,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./sass
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../babel */ \"./babel.js\");\n/* harmony import */ var _babel__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _sass_style_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sass/style.sass */ \"./sass/style.sass\");\n/* harmony import */ var _sass_style_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_style_sass__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var wowjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! wowjs */ \"../node_modules/wowjs/dist/wow.js\");\n/* harmony import */ var wowjs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(wowjs__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _img_sprite_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/sprite.svg */ \"./img/sprite.svg\");\n/* harmony import */ var _img_search_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/search.svg */ \"./img/search.svg\");\n/* harmony import */ var _fonts_Lato_Thin_woff__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../fonts/Lato-Thin.woff */ \"./fonts/Lato-Thin.woff\");\n/* harmony import */ var _fonts_Lato_Light_woff__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../fonts/Lato-Light.woff */ \"./fonts/Lato-Light.woff\");\n/* harmony import */ var _fonts_Lato_Regular_woff__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../fonts/Lato-Regular.woff */ \"./fonts/Lato-Regular.woff\");\n/* harmony import */ var _fonts_Lato_Medium_woff__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../fonts/Lato-Medium.woff */ \"./fonts/Lato-Medium.woff\");\n/* harmony import */ var _fonts_Lato_Bold_woff__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../fonts/Lato-Bold.woff */ \"./fonts/Lato-Bold.woff\");\n/* harmony import */ var _fonts_Lato_Heavy_woff__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../fonts/Lato-Heavy.woff */ \"./fonts/Lato-Heavy.woff\");\n/* harmony import */ var _fonts_Lato_Black_woff__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../fonts/Lato-Black.woff */ \"./fonts/Lato-Black.woff\");\n/* harmony import */ var _fonts_Lato_Semibold_woff__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../fonts/Lato-Semibold.woff */ \"./fonts/Lato-Semibold.woff\");\n\n\n // Картинки\n\n\n // Шрифты\n\n\n\n\n\n\n\n\n\nvar wow = new wowjs__WEBPACK_IMPORTED_MODULE_2___default.a.WOW({\n  live: false\n}).init();\n\n//# sourceURL=webpack:///./scripts/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../babel */ \"./babel.js\");\n/* harmony import */ var _babel__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _sass_style_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sass/style.sass */ \"./sass/style.sass\");\n/* harmony import */ var _sass_style_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_style_sass__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var wowjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! wowjs */ \"../node_modules/wowjs/dist/wow.js\");\n/* harmony import */ var wowjs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(wowjs__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _img_sprite_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/sprite.svg */ \"./img/sprite.svg\");\n/* harmony import */ var _img_header_search_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/header/search.svg */ \"./img/header/search.svg\");\n/* harmony import */ var _img_main_bg_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../img/main/bg.jpg */ \"./img/main/bg.jpg\");\n/* harmony import */ var _img_main_mainAvatar_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../img/main/mainAvatar.png */ \"./img/main/mainAvatar.png\");\n/* harmony import */ var _img_chips_ch1_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../img/chips/ch1.jpg */ \"./img/chips/ch1.jpg\");\n/* harmony import */ var _img_chips_ch2_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../img/chips/ch2.jpg */ \"./img/chips/ch2.jpg\");\n/* harmony import */ var _img_chips_ch3_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../img/chips/ch3.jpg */ \"./img/chips/ch3.jpg\");\n/* harmony import */ var _img_chips_ch4_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../img/chips/ch4.jpg */ \"./img/chips/ch4.jpg\");\n/* harmony import */ var _img_posts_car_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../img/posts/car.png */ \"./img/posts/car.png\");\n/* harmony import */ var _img_posts_postAvatar_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../img/posts/postAvatar.png */ \"./img/posts/postAvatar.png\");\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module '../img/posts/popular.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n/* harmony import */ var _fonts_Lato_Thin_woff__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../fonts/Lato-Thin.woff */ \"./fonts/Lato-Thin.woff\");\n/* harmony import */ var _fonts_Lato_Light_woff__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../fonts/Lato-Light.woff */ \"./fonts/Lato-Light.woff\");\n/* harmony import */ var _fonts_Lato_Regular_woff__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../fonts/Lato-Regular.woff */ \"./fonts/Lato-Regular.woff\");\n/* harmony import */ var _fonts_Lato_Medium_woff__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../fonts/Lato-Medium.woff */ \"./fonts/Lato-Medium.woff\");\n/* harmony import */ var _fonts_Lato_Bold_woff__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../fonts/Lato-Bold.woff */ \"./fonts/Lato-Bold.woff\");\n/* harmony import */ var _fonts_Lato_Heavy_woff__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../fonts/Lato-Heavy.woff */ \"./fonts/Lato-Heavy.woff\");\n/* harmony import */ var _fonts_Lato_Black_woff__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../fonts/Lato-Black.woff */ \"./fonts/Lato-Black.woff\");\n/* harmony import */ var _fonts_Lato_Semibold_woff__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../fonts/Lato-Semibold.woff */ \"./fonts/Lato-Semibold.woff\");\n\n\n // Картинки\n\n\n\n\n\n\n\n\n\n\n\n // Шрифты\n\n\n\n\n\n\n\n\n\nvar mobileBtn = document.querySelector('.mobile-button'),\n    mobileMenu = document.querySelector('.navigation--mobile'),\n    tiles = document.querySelectorAll('.main-information__sidebar-tile'),\n    mainContent = document.querySelectorAll('.main-information__info'),\n    sidebarBtn = document.querySelector('.main-information__sm-btn'),\n    mainSidebar = document.querySelector('.main-information__sidebar'),\n    sideClose = document.querySelector('.main-information__mobile-icon'),\n    mobileBtnLine = document.querySelectorAll('.mobile-button__line');\nmobileBtn.addEventListener('click', function () {\n  this.classList.toggle('mobile-button--active');\n\n  for (var i = 0; i < mobileBtnLine.length; i++) {\n    mobileBtnLine[i].classList.toggle('mobile-button__line--active');\n  }\n\n  if (mobileBtn.classList.contains('mobile-button--active')) {\n    mobileMenu.style.top = \"64px\";\n  } else {\n    mobileMenu.style.top = \"-1200px\";\n  }\n});\n\nfunction toggleSide() {\n  mainSidebar.classList.toggle('main-information__sidebar--active');\n}\n\nfunction tabSelected(event) {\n  tiles.forEach(function (el) {\n    el.classList.remove('main-information__sidebar-tile--active');\n  });\n  var t = event.target;\n  t.closest('.main-information__sidebar-tile').classList.add('main-information__sidebar-tile--active');\n\n  for (var i = 0; i < 6; i++) {\n    if (tiles[0].classList.contains('main-information__sidebar-tile--active')) {\n      mainContent[i].classList.remove('main-information__info--active');\n      mainContent[1].classList.add('main-information__info--active');\n    } else if (tiles[1].classList.contains('main-information__sidebar-tile--active')) {\n      mainContent[i].classList.remove('main-information__info--active');\n      mainContent[2].classList.add('main-information__info--active');\n    } else if (tiles[2].classList.contains('main-information__sidebar-tile--active')) {\n      mainContent[i].classList.remove('main-information__info--active');\n      mainContent[3].classList.add('main-information__info--active');\n    } else if (tiles[3].classList.contains('main-information__sidebar-tile--active')) {\n      mainContent[i].classList.remove('main-information__info--active');\n      mainContent[4].classList.add('main-information__info--active');\n    } else {\n      mainContent[i].classList.remove('main-information__info--active');\n      mainContent[5].classList.add('main-information__info--active');\n    }\n  }\n}\n\n;\nsidebarBtn.addEventListener('click', toggleSide);\nsideClose.addEventListener('click', toggleSide);\n\nfor (var i = 0; i < tiles.length; i++) {\n  tiles[i].addEventListener('click', tabSelected);\n}\n\nvar wow = new wowjs__WEBPACK_IMPORTED_MODULE_2___default.a.WOW({\n  live: false\n}).init();\n\n//# sourceURL=webpack:///./scripts/index.js?");
 
 /***/ }),
 
