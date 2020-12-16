@@ -1,0 +1,80 @@
+.footer
+    &__footer-lists-wrapper
+        padding-bottom: 44px
+.mailing
+    padding: 60px 0 70px 0
+    display: flex
+    align-items: center
+    flex-direction: column
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 50px
+        font-family: $roboto
+        max-width: 750px
+        word-break: break-all
+        white-space: nowrap
+        overflow-x: hidden
+        overflow-y: hidden
+        text-overflow: ellipsis
+        margin-bottom: 25px
+    &-form
+        width: 459px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &__input
+            width: 313px
+            max-height: 40px
+            padding: 11px 5px 10px 13px
+            border: 1px solid #D9DADB
+            border-radius: 5px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+    &__button
+        padding: 10px 27px !important
+.footer-lists-wrapper
+    display: grid
+    grid-template-columns: repeat(5, calc( 100% / 6 + 5px)) 165px
+    justify-content: space-between
+.footer-list
+    padding-top: 30px
+    border-top: 5px solid
+    &--news
+        border-color: #FF4F52
+    &--articles
+        border-color: #AC8EE3
+    &--videos
+        border-color: #4592FF
+    &--courses
+        border-color: #FFA34D
+    &--information
+        border-color: #3DC47E
+    &--categories
+        border-color: #6E99AE
+    &__title
+        color: $darkGray
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 25px
+        max-width: 165px
+        white-space: nowrap
+        overflow-x: hidden
+        text-overflow: ellipsis
+    &__item
+        margin-bottom: 15px
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        max-width: 170px
+        white-space: nowrap
+        overflow-x: hidden
+        text-overflow: ellipsis
+    &__link
+        color: $lightGray
