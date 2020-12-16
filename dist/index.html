@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-  <link href="vendors~main.ad2a91a43f38f18a6b7f.css" rel="stylesheet"><link href="main.e560121278d63282f6c7.css" rel="stylesheet"></head>
+  <link href="vendors~main.ad2a91a43f38f18a6b7f.css" rel="stylesheet"><link href="main.1006c53c4573baa647bd.css" rel="stylesheet"></head>
   <body>
     <header class="header">
       <div class="container header__wrapper">
@@ -1406,13 +1406,16 @@
       <div class="container">
         <div class="mailing">
           <h2 class="mailing__title">Подпишитесь на нашу рассылку</h2>
-          <form action="send.php" class="mailing-form">
-            <input
-              placeholder="Email"
-              type="email"
-              class="mailing-form__input"
-              required
-            />
+          <form action="send.php" class="form mailing-form">
+            <div class="mailing-form__input-wrapper">
+              <input
+                placeholder="Email"
+                type="email"
+                class="mailing-form__input"
+                required
+                name="email"
+              />
+            </div>
             <button class="button button--default mailing__button">
               <span class="button__text">Подписаться</span>
             </button>
@@ -1589,9 +1592,136 @@
           <!-- /.footer-list -->
         </div>
         <!-- /.footer-lists-wrapper -->
+        <div class="bottom-links">
+          <a href="index.html" class="bottom-links__index-link">
+            <svg class="bottom-links__logo">
+              <use xlink:href="images/sprite.svg#blogo"></use>
+            </svg>
+          </a>
+          <nav class="bottom-navigation bottom-links__navigation">
+            <ul class="bottom-navigation__list">
+              <li class="bottom-navigation__item">
+                <a href="#" class="bottom-navigation__item-link">Контакты</a>
+                <!-- /.bottom-navigation__item-link -->
+              </li>
+              <!-- /.bottom-navigation__item -->
+              <li class="bottom-navigation__item">
+                <a href="#" class="bottom-navigation__item-link"
+                  >Работа у нас</a
+                >
+                <!-- /.bottom-navigation__item-link -->
+              </li>
+              <!-- /.bottom-navigation__item -->
+              <li class="bottom-navigation__item">
+                <a href="#" class="bottom-navigation__item-link">Реклама</a>
+                <!-- /.bottom-navigation__item-link -->
+              </li>
+              <!-- /.bottom-navigation__item -->
+              <li class="bottom-navigation__item">
+                <a href="#" class="bottom-navigation__item-link"
+                  >Обратная связь</a
+                >
+                <!-- /.bottom-navigation__item-link -->
+              </li>
+              <!-- /.bottom-navigation__item -->
+            </ul>
+            <!-- /.bottom-navigation__list -->
+          </nav>
+          <div class="sm-link-menu">
+            <nav class="bottom-navigation bottom-navigation--sm bottom-links__navigation">
+              <ul class="bottom-navigation__list">
+                <li class="bottom-navigation__item">
+                  <a href="#" class="bottom-navigation__item-link">Контакты</a>
+                  <!-- /.bottom-navigation__item-link -->
+                </li>
+                <!-- /.bottom-navigation__item -->
+                <li class="bottom-navigation__item">
+                  <a href="#" class="bottom-navigation__item-link"
+                    >Работа у нас</a
+                  >
+                  <!-- /.bottom-navigation__item-link -->
+                </li>
+            </nav>
+                <svg class="bottom-links__logo bottom-links__logo--sm">
+                  <use xlink:href="images/sprite.svg#blogo"></use>
+                </svg>
+            <nav class="bottom-navigation bottom-navigation--sm bottom-links__navigation">
+              <ul class="bottom-navigation__list">
+                <li class="bottom-navigation__item bottom-navigation__item--reverse">
+                  <a href="#" class="bottom-navigation__item-link">Реклама</a>
+                  <!-- /.bottom-navigation__item-link -->
+                </li>
+                <!-- /.bottom-navigation__item -->
+                <li class="bottom-navigation__item bottom-navigation__item--reverse">
+                  <a href="#" class="bottom-navigation__item-link"
+                    >Обратная связь</a
+                  >
+                  <!-- /.bottom-navigation__item-link -->
+                </li>
+                <!-- /.bottom-navigation__item -->
+              </ul>
+              <!-- /.bottom-navigation__list -->
+            </nav>
+            <!-- /.bottom-navigation -->
+          </div>
+          <div class="social-links bottom-links__social-links">
+            <a class="bottom-links__link">
+              <div
+                class="social-links__link-bg social-links__link-bg--facebook"
+              >
+                <svg class="social-links__link">
+                  <use xlink:href="images/sprite.svg#facebook"></use>
+                </svg>
+              </div>
+              <!-- /.social-links__link-bg -->
+            </a>
+            <!-- /.bottom-links__link -->
+            <a class="bottom-links__link">
+              <div class="social-links__link-bg social-links__link-bg--twitter">
+                <svg class="social-links__link">
+                  <use xlink:href="images/sprite.svg#twitter"></use>
+                </svg>
+              </div>
+              <!-- /.social-links__link-bg -->
+            </a>
+            <!-- /.bottom-links__link -->
+            <a class="bottom-links__link">
+              <div class="social-links__link-bg social-links__link-bg--youtube">
+                <svg class="social-links__link">
+                  <use xlink:href="images/sprite.svg#youtube"></use>
+                </svg>
+              </div>
+              <!-- /.social-links__link-bg -->
+            </a>
+            <!-- /.bottom-links__link -->
+            <a class="bottom-links__link">
+              <div
+                class="social-links__link-bg social-links__link-bg--instagram"
+              >
+                <svg class="social-links__link">
+                  <use xlink:href="images/sprite.svg#instagram"></use>
+                </svg>
+              </div>
+              <!-- /.social-links__link-bg -->
+            </a>
+            <!-- /.bottom-links__link -->
+          </div>
+          <!-- /.social-links -->
+        </div>
+        <!-- /.bottom-links -->
+        <div class="copy-info">
+          <p class="copy-info__about">
+            Universal — это онлайн издание, в котором мы публикуем полезные
+            материалы о веб разработке: статьи, новости, видеоуроки, подборки,
+            ссылки и курсы. Материалы на сайте бесплатны, но при копировании,
+            указывайте ссылку.
+          </p>
+          <span class="copy-info__copyright">© 2020 Universal Magazine</span>
+        </div>
+        <!-- /.copy-info -->
       </div>
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
-  <script src="vendors~main.c1309b0e2884ced3abc7.js"></script><script src="main.0fe2cd31b0e782b659a5.js"></script></body>
+  <script src="vendors~main.6fd491e107ced6cae492.js"></script><script src="main.9d09cd3d2c766dabba3e.js"></script></body>
 </html>

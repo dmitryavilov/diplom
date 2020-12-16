@@ -1,7 +1,10 @@
+import 'jquery'
+import 'popper.js'
 import '../babel'
 import '../sass/style.sass'
 import Swiper from 'swiper/bundle'
 import WOW from 'wowjs'
+const jqueryvalidation = require('jquery-validation');
 // Картинки
 import Sprite from '../img/sprite.svg'
 import Search from '../img/header/search.svg'
@@ -42,12 +45,17 @@ import Lato5 from '../fonts/Lato-Bold.woff'
 import Lato6 from '../fonts/Lato-Heavy.woff'
 import Lato7 from '../fonts/Lato-Black.woff'
 import Lato8 from '../fonts/Lato-Semibold.woff'
+import { ready } from 'jquery'
 // Библиотеки
 const mySwiper = new Swiper('.slider-wrapper', {
   direction: 'horizontal',
   speed: 750,
   autoplay: {
     delay: 2000,
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
   },
   autoScrollOffset: 1,
   spaceBetween: 15,
@@ -61,7 +69,25 @@ const mySwiper = new Swiper('.slider-wrapper', {
   },
 
 })
-
+$('.form').each(function(){
+  $(this).validate({
+  errorClass: "invalid",
+  messages: {
+    name: {
+      required: "Пожалуйста, введите своё имя",
+      minlength: "Минимальное число символов - 2"
+    },
+    email: {
+      required: "Пожалуйста, введите свой e-mail",
+      email: "Е-mail адрес должнен быть в формате name@domain.com"
+    },
+    phone:{
+      required: 'Please specify your phone number'
+    }
+  }
+  });
+});
+$('.mailing-form').validate();
 const mobileBtn = document.querySelector('.mobile-button'),
       mobileMenu = document.querySelector('.navigation--mobile'),
       tiles = document.querySelectorAll('.main-information__sidebar-tile'),

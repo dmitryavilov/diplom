@@ -195,6 +195,13 @@
     .questions-post
         &__bg
             width: 555px
+    .copy-info
+        padding-top: 35px
+        padding-bottom: 40px
+        &__about, &__copyright
+            font-size: 12px
+        &__about
+            max-width: 695px
 @media (max-width: 1050px)
     .posts
         &-wrapper
@@ -392,6 +399,15 @@
     .slide
         &__title
             font-size: 33px
+    .footer-lists-wrapper
+        grid-template-columns: repeat(3,calc(100%/3))
+        grid-row-gap: 30px
+    .footer-list
+        &__title
+            font-size: 16px
+    .copy-info
+        &__about
+            max-width: 640px
 @media (max-width: 900px)
     .posts
         &-wrapper
@@ -419,7 +435,25 @@
                 height: 90px
         &__button
             margin-top: 40px
-
+    .copy-info
+        &__about
+            max-height: 65px
+            max-width: 491px
+    .bottom-navigation
+        &__item
+            font-size: 12px
+            margin-right: 23px
+    .social-links
+        width: 173px
+        &__link
+            width: 18px
+            height: 18px
+            &-bg
+                width: 35px
+                height: 35px
+    .bottom-links
+        &__navigation
+            margin-left: 20px
 @media (max-width: 800px)
     .posts
         &-wrapper
@@ -552,7 +586,18 @@
                 max-width: 303px
     .checklist
         background-position: 213px 20px
-
+    .copy-info
+        flex-direction: column
+        &__about
+            margin-bottom: 20px
+    .bottom-navigation
+        &__list
+            display: grid
+            grid-template-columns: auto auto
+            grid-row-gap: 4px
+    .mailing
+        &__title
+            font-size: 32px
 @media (max-width: 700px)
     .main-information
         &__sidebar
@@ -633,6 +678,15 @@
             grid-template-columns: repeat(2,227px)
         &__post
             padding-left: 23px
+    .mailing
+        &__title
+            font-size: 26px
+        &-form
+            width: 410px
+            &__input
+                width: 260px
+                &-wrapper
+                    max-width: 260px
 @media (max-width: 576px)
     .chips
         &-wrapper
@@ -693,6 +747,27 @@
         &__posts-wrapper
             padding-bottom: 60px
             grid-template-columns: 200px
+    .footer-lists-wrapper
+        grid-template-columns: repeat(2, 50%)
+    .footer-list
+        &__item
+            max-width: 135px
+    .bottom-navigation
+        &__item
+            max-width: 118px
+            margin-right: 16px
+    .social-links
+        width: 144px
+        &__link
+            width: 16px
+            height: 16px
+            &-bg
+                width: 30px
+                height: 30px
+    .copy-info
+        &__about
+            max-height: 82px
+            max-width: 424px
 @media (max-width: 550px)
     .posts
         &-wrapper
@@ -828,7 +903,66 @@
     .questions-post
         &__bg
             width: 620px
+    .bottom-links
+        flex-direction: column
+        align-items: center
+        &__social-links
+            margin-left: 0
+            margin-top: 20px
+        &__navigation
+            margin-left: 0px
+        &__logo
+            display: none
+            transform: translateY(-5px)
+            &--sm
+                display: block
+    .bottom-navigation
+        display: none
+        &__item
+            margin-right: 0px
+            text-align: right
+            &--reverse
+                text-align: left
+        &__list
+            grid-template-columns: auto
+        &--sm
+            display: block
+    .sm-link-menu
+        width: 290px
+        justify-content: center
+        grid-column-gap: 10px
+        display: grid
+        grid-template-columns: 115px 50px 115px
+    .social-links
+        width: 183px
+    .footer-lists-wrapper
+        grid-template-columns: repeat(1,70%)
+        justify-content: center
+    .mailing
+        &__title
+            font-size: 22px
+            max-width: 327px
+            word-break: normal
+            white-space: normal
+            height: 60px
+            line-height: 28px
+            text-align: center
+        &-form
+            width: 100%
+            flex-direction: column
+            align-items: center
+            height: 100px
+            &__input
+                width: 280px
+                &-wrapper
+                    max-width: 290px
+    .copy-info
+        align-items: center
+        text-align: center
 
+        &__about
+            max-height: 105px
+            max-width: 313px
 @media (max-width: 420px)
     .rubrics
         &__content
