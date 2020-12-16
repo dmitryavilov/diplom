@@ -1,0 +1,213 @@
+.slider
+    background-color: $darkGray
+    padding: 60px 0
+    &__content
+        display: grid
+        grid-template-columns: repeat(4, 263px)
+        grid-template-rows: repeat(3, 170px)
+        justify-content: space-between
+        grid-row-gap: 30px
+    &__post
+        border-radius: 10px
+    &-wrapper
+        grid-column: span 2
+        grid-row: span 3
+        background-color: #fff
+        border-radius: 10px
+        overflow: hidden
+        position: relative
+        &__slider
+            width: 100%
+            height: 100%
+        &__pagination
+            position: absolute
+            justify-content: space-around
+            max-width: 125px
+            padding: 3px 0
+            display: flex
+            left: 50% !important
+            transform: translateX(-50%) !important
+            bottom: 44px !important
+            z-index: 3
+            &-bullet
+                display: inline-block
+                width: 8px
+                height: 8px
+                border-radius: 50%
+                background-color: #D9DADB
+                opacity: 0.5
+                cursor: pointer
+                &--active
+                    opacity: 1
+                    background-color: #fff
+.questions-post
+    grid-row: span 2
+    grid-column: span 2
+    background-color: #fff
+    position: relative
+    border-radius: 10px
+    overflow: hidden
+    padding-left: 35px
+    &__bg
+        width: 100%
+        height: 100%
+        object-fit: cover
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        z-index: 1
+    &__category
+        color: #6E99AE
+        font-style: normal
+        font-weight: 900
+        font-size: 12px
+        line-height: 15px
+        text-transform: uppercase
+        letter-spacing: 0.5px
+        position: relative
+        z-index: 2
+        top: 35px
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 25px
+        line-height: 30px
+        color: $darkGray
+        font-family: $roboto
+        &-wrapper
+            max-width: 243px
+            height: 95px
+            overflow-x: hidden
+            overflow-y: auto
+            z-index: 2
+            position: relative
+            margin-top: 53px
+    &__description
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: $lightGray
+        position: relative
+        z-index: 2
+        max-width: 213px
+        max-height: 60px
+        margin-top: 11px
+    &__button
+        position: relative
+        z-index: 2
+        max-width: 154px
+        margin-top: 44px
+        margin-left: 3px
+        &-icon
+            margin-left: 6px
+.slide
+    width: 100%
+    height: 100%
+    position: relative
+    &:after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        z-index: 2
+    &__bg
+        position: absolute
+        right: 0
+        top: 0
+        left: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        object-fit: cover
+        z-index: 1
+    &__author
+        object-fit: cover
+        width: 45px
+        height: 45px
+        border-radius: 50%
+        &-wrapper
+            position: absolute
+            top: 50px
+            width: auto
+            z-index: 3
+            display: flex
+            flex-direction: column
+            align-items: center
+            left: 50%
+            transform: translateX(-50%)
+            max-width: 166px
+    &__name
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        opacity: 0.85
+        color: white
+        margin-top: 8px
+    &__profession
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        opacity: 0.4
+        color: white
+        margin-top: 2px
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 50px
+        font-family: $roboto
+        color: white
+        text-align: center
+        &-wrapper
+            max-width: 455px
+            height: 155px
+            position: relative
+            z-index: 3
+            margin: 0 auto
+            overflow-x: hidden
+            overflow-y: auto
+            top: 170px
+    &__button
+        position: relative
+        z-index: 3
+        top: 210px
+        max-width: 194px
+        justify-content: center
+        align-items: center
+        margin: 0 auto
+        &-counter
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            transform: translatey(1px)
+            color: #C5E4FC
+            max-width: 27px
+            overflow-x: hidden
+            white-space: nowrap
+            text-overflow: ellipsis
+        &-text
+            margin-left: 9px
+            margin-right: 8px
+            max-width: 102px
+@media (min-width: 992px)
+    .slide
+        &__title
+            transition: 0.4s
+            &:hover
+                color: $yellow
+    .questions-post
+        &__title
+            transition: 0.4s
+            &:hover
+                color: gray

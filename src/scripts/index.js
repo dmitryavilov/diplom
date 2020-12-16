@@ -1,5 +1,6 @@
 import '../babel'
 import '../sass/style.sass'
+import Swiper from 'swiper/bundle'
 import WOW from 'wowjs'
 // Картинки
 import Sprite from '../img/sprite.svg'
@@ -29,6 +30,9 @@ import Rm4 from '../img/rubrics/rm4.jpg'
 import Rm5 from '../img/rubrics/rm5.jpg'
 import Rm6 from '../img/rubrics/rm6.jpg'
 import Rm7 from '../img/rubrics/rm7.jpg'
+import qustionsBg from '../img/slider/qbg.jpg'
+import sliderAvatar from '../img/slider/sliderAvatar.png'
+import slide1 from '../img/slider/slide1.jpg'
 // Шрифты
 import Lato1 from '../fonts/Lato-Thin.woff'
 import Lato2 from '../fonts/Lato-Light.woff'
@@ -38,6 +42,25 @@ import Lato5 from '../fonts/Lato-Bold.woff'
 import Lato6 from '../fonts/Lato-Heavy.woff'
 import Lato7 from '../fonts/Lato-Black.woff'
 import Lato8 from '../fonts/Lato-Semibold.woff'
+// Библиотеки
+const mySwiper = new Swiper('.slider-wrapper', {
+  direction: 'horizontal',
+  speed: 750,
+  autoplay: {
+    delay: 2000,
+  },
+  autoScrollOffset: 1,
+  spaceBetween: 15,
+  pagination: {
+    el: '.slider-wrapper__pagination',
+    type: 'bullets',
+    bulletClass: 'slider-wrapper__pagination-bullet',
+    bulletActiveClass: 'slider-wrapper__pagination-bullet--active',
+    clickable: true,
+    bulletElement: 'div'
+  },
+
+})
 
 const mobileBtn = document.querySelector('.mobile-button'),
       mobileMenu = document.querySelector('.navigation--mobile'),
