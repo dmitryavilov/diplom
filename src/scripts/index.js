@@ -16,6 +16,19 @@ import realProject from '../img/posts/popular.jpg'
 import computer from '../img/posts/computer.jpg'
 import fileIcon from '../img/posts/file.svg'
 import salaryBg from '../img/salary/salaryBg.jpg'
+import R1 from '../img/rubrics/r1.jpg'
+import R2 from '../img/rubrics/r2.jpg'
+import R3 from '../img/rubrics/r3.jpg'
+import R4 from '../img/rubrics/r4.jpg'
+import R5 from '../img/rubrics/r5.jpg'
+import R6 from '../img/rubrics/r6.jpg'
+import Rm1 from '../img/rubrics/rm1.jpg'
+import Rm2 from '../img/rubrics/rm2.jpg'
+import Rm3 from '../img/rubrics/rm3.jpg'
+import Rm4 from '../img/rubrics/rm4.jpg'
+import Rm5 from '../img/rubrics/rm5.jpg'
+import Rm6 from '../img/rubrics/rm6.jpg'
+import Rm7 from '../img/rubrics/rm7.jpg'
 // Шрифты
 import Lato1 from '../fonts/Lato-Thin.woff'
 import Lato2 from '../fonts/Lato-Light.woff'
@@ -33,6 +46,7 @@ const mobileBtn = document.querySelector('.mobile-button'),
       sidebarBtn = document.querySelector('.main-information__sm-btn'),
       mainSidebar = document.querySelector('.main-information__sidebar'),
       sideClose = document.querySelector('.main-information__mobile-icon'),
+      flags = document.querySelectorAll('.rubric__flag-icon'),
       mobileBtnLine = document.querySelectorAll('.mobile-button__line');
 mobileBtn.addEventListener('click', function(){
   this.classList.toggle('mobile-button--active');
@@ -45,6 +59,11 @@ mobileBtn.addEventListener('click', function(){
     mobileMenu.style.top="-1200px";
   }
 });
+
+function flagActive(event) {
+  let t = event.target;
+  t.closest('.rubric__flag-icon').classList.toggle('rubric__flag-icon--active');
+}
 
 function toggleSide(){
   mainSidebar.classList.toggle('main-information__sidebar--active');
@@ -87,6 +106,9 @@ for (let i=0; i<tiles.length; i++) {
   tiles[i].addEventListener('click', tabSelected);
 }
 
+for (let i=0; i<flags.length; i++) {
+  flags[i].addEventListener('click', flagActive);
+}
 var wow = new WOW.WOW({
   live: false
 }).init();
