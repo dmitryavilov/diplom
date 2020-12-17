@@ -290,10 +290,13 @@
         &-information
             position: relative
             &__title
-                max-width: 425px
                 font-size: 35px
-                max-height: 180px
                 line-height: 42px
+                &-wrapper
+                    max-width: 425px
+                    height: 90px
+                    &--big
+                        height: 130px
             &__sidebar
                 position: absolute
                 top: 0
@@ -470,6 +473,10 @@
         background-position: 139px 20px
         &__text-wrapper
             padding-left: 16px
+    .mailing
+        &__title
+            max-width: 625px
+            font-size: 36px
 @media (max-width: 768px)
     .mobile-button
         display: flex
@@ -511,6 +518,8 @@
             right: 0
         &__search-form
             margin-bottom: 30px
+        &__item
+            max-width: 110px
     .search-form
         &__input
             width: 340px
@@ -525,8 +534,6 @@
         &-information
             &__title
                 font-size: 31px
-                max-width: 365px
-                max-height: 161px
             &__sidebar
                 &-description
                     font-size: 12px
@@ -598,6 +605,9 @@
     .mailing
         &__title
             font-size: 32px
+    .slider
+        &__post
+            padding-left: 40px
 @media (max-width: 700px)
     .main-information
         &__sidebar
@@ -653,7 +663,10 @@
             margin-top: 8px
         &:nth-child(5) &__other
             margin-top: 49px
-
+    .mailing
+        &__title
+            max-width: 470px
+            font-size: 27px
 @media (max-width: 630px)
     .posts
         &-wrapper
@@ -681,6 +694,7 @@
     .mailing
         &__title
             font-size: 26px
+            max-width: 450px
         &-form
             width: 410px
             &__input
@@ -802,7 +816,7 @@
             &__info
                 padding-left: 19px
             &__title
-                font-size: 22px
+                font-size: 24px
                 max-width: 292px
             &__description
                 margin-top: 87px
@@ -980,3 +994,6 @@
             height: 50px
         &:nth-child(5) &__title
             height: 30px
+    .main-information
+        &__title
+            font-size: 23px

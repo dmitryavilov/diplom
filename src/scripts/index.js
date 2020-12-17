@@ -46,48 +46,8 @@ import Lato6 from '../fonts/Lato-Heavy.woff'
 import Lato7 from '../fonts/Lato-Black.woff'
 import Lato8 from '../fonts/Lato-Semibold.woff'
 import { ready } from 'jquery'
-// Библиотеки
-const mySwiper = new Swiper('.slider-wrapper', {
-  direction: 'horizontal',
-  speed: 750,
-  autoplay: {
-    delay: 2000,
-  },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-  autoScrollOffset: 1,
-  spaceBetween: 15,
-  pagination: {
-    el: '.slider-wrapper__pagination',
-    type: 'bullets',
-    bulletClass: 'slider-wrapper__pagination-bullet',
-    bulletActiveClass: 'slider-wrapper__pagination-bullet--active',
-    clickable: true,
-    bulletElement: 'div'
-  },
 
-})
-$('.form').each(function(){
-  $(this).validate({
-  errorClass: "invalid",
-  messages: {
-    name: {
-      required: "Пожалуйста, введите своё имя",
-      minlength: "Минимальное число символов - 2"
-    },
-    email: {
-      required: "Пожалуйста, введите свой e-mail",
-      email: "Е-mail адрес должнен быть в формате name@domain.com"
-    },
-    phone:{
-      required: 'Please specify your phone number'
-    }
-  }
-  });
-});
-$('.mailing-form').validate();
+
 const mobileBtn = document.querySelector('.mobile-button'),
       mobileMenu = document.querySelector('.navigation--mobile'),
       tiles = document.querySelectorAll('.main-information__sidebar-tile'),
@@ -96,7 +56,9 @@ const mobileBtn = document.querySelector('.mobile-button'),
       mainSidebar = document.querySelector('.main-information__sidebar'),
       sideClose = document.querySelector('.main-information__mobile-icon'),
       flags = document.querySelectorAll('.rubric__flag-icon'),
-      mobileBtnLine = document.querySelectorAll('.mobile-button__line');
+      mobileBtnLine = document.querySelectorAll('.mobile-button__line'),
+      topBtn = document.querySelector('.to-top-button');
+
 mobileBtn.addEventListener('click', function(){
   this.classList.toggle('mobile-button--active');
   for(let i=0; i<mobileBtnLine.length; i++){
@@ -148,6 +110,14 @@ function tabSelected(event){
     }
 };
 
+$(window).scroll(function (event) {
+    const top = $(window).scrollTop();
+     if(top >= 350){
+      topBtn.style.right="40px"
+     } else {
+      topBtn.style.right="-400px"
+     }
+});
 sidebarBtn.addEventListener('click', toggleSide);
 sideClose.addEventListener('click', toggleSide);
 
@@ -161,3 +131,54 @@ for (let i=0; i<flags.length; i++) {
 var wow = new WOW.WOW({
   live: false
 }).init();
+
+const mySwiper = new Swiper('.slider-wrapper', {
+  direction: 'horizontal',
+  speed: 750,
+  autoplay: {
+    delay: 2000,
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  autoScrollOffset: 1,
+  spaceBetween: 15,
+  pagination: {
+    el: '.slider-wrapper__pagination',
+    type: 'bullets',
+    bulletClass: 'slider-wrapper__pagination-bullet',
+    bulletActiveClass: 'slider-wrapper__pagination-bullet--active',
+    clickable: true,
+    bulletElement: 'div'
+  },
+
+})
+$('.form').each(function(){
+$(this).validate({
+  errorClass: "invalid",
+  messages: {
+    name: {
+      required: "Пожалуйста, введите своё имя",
+      minlength: "Минимальное число символов - 2"
+    },
+    email: {
+      required: "Пожалуйста, введите свой e-mail",
+      email: "Е-mail адрес должнен быть в формате name@domain.com"
+    },
+    phone:{
+      required: 'Please specify your phone number'
+    }
+  }
+  });
+});
+$('a[href^="#"]').bind('click.smoothscroll',function (e) {
+    var target = this.hash,
+    $target = $(target);
+    $('html, body').stop().animate( {
+      'scrollTop': $target.offset().top
+    }, 400, 'swing', function () {
+      window.location.hash = target;
+    });
+});
+$('.mailing-form').validate();

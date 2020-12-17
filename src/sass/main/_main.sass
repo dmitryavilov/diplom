@@ -87,6 +87,14 @@
             text-transform: uppercase
             letter-spacing: 0.5px
             margin-top: 145px
+            &--css
+                color: #3BBDC4
+            &--js
+                color: $blue
+            &--html
+                color: #AC8EE3
+            &--web-design
+                color: #FFA34D
         &__title
             font-family: $roboto
             font-style: normal
@@ -96,15 +104,15 @@
             display: flex
             align-items: center
             color: #FFFFFF
-            max-width: 598px
-            margin-top: 20px
-            max-height: 175px
-            padding-bottom: 5px
             position: relative
-            transform: translateY(-20px)
-            padding-top: 20px
-            overflow-x: hidden
-            overflow-y: auto
+            &-wrapper
+                overflow-x: hidden
+                overflow-y: auto
+                max-width: 598px
+                margin-top: 20px
+                height: 105px
+                &--big
+                    height: 155px
         &__mobile-icon
             top: 10px
             left: -37px
@@ -115,7 +123,7 @@
             display: none
         &__button
             max-width: 156px
-            margin-top: 23px
+            margin-top: 45px
             &-icon
                 margin-left: 7px
         &__sidebar
@@ -166,7 +174,7 @@
             &--css
                 color: #3BBDC4
             &--js
-                color: $blue
+                color: #6E99AE
             &--html
                 color: #AC8EE3
             &--web-design
@@ -252,9 +260,40 @@
         &-wrapper
             width: 100%
             border-bottom: 1px solid gray
-
+.to-top-button
+    width: 70px
+    height: 70px
+    border-radius: 10px
+    background-color: $darkGray
+    position: fixed
+    bottom: 70px
+    transition: 0.7s
+    right: -400px
+    z-index: 20
+    box-shadow: 0 0 5px white
+    display: flex
+    justify-content: center
+    align-items: center
+    &__icon
+        transform: rotate(-90deg)
+        width: 35px
+        height: 35px
+        fill: white
 @media (min-width: 992px)
     .main-information
         &__sidebar-tile
             &:hover
                 background-color: #EDEFF0
+    .button
+        transition: 0.4s
+        &:hover
+            box-shadow: 0 0 12px $blue
+        &__icon
+            transition: 0.4s
+    .button:hover .button__icon--arrow
+        transform: translateX(5px)
+    .to-top-button
+        &__icon
+            transition: 0.4s
+    .to-top-button:hover .to-top-button__icon
+        transform: translateY(-8px) rotate(-90deg)

@@ -11,11 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-  <link href="vendors~main.ad2a91a43f38f18a6b7f.css" rel="stylesheet"><link href="main.1006c53c4573baa647bd.css" rel="stylesheet"></head>
+  <link href="vendors~main.ad2a91a43f38f18a6b7f.css" rel="stylesheet"><link href="main.d3e21945b2a4451b76cb.css" rel="stylesheet"></head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container header__wrapper">
-        <a href="index.html" class="logo header__logo">
+        <a class="logo header__logo">
           <svg class="logo__img">
             <use xlink:href="images/sprite.svg#logo"></use>
           </svg>
@@ -24,11 +24,11 @@
         <nav class="navigation header__navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Статьи</a>
+              <a href="#articles" class="navigation__link">Статьи</a>
             </li>
             <!-- /.navigation__item -->
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Новости</a>
+              <a href="#news" class="navigation__link">Новости</a>
             </li>
             <!-- /.navigation__item -->
             <li class="navigation__item">
@@ -133,15 +133,17 @@
               </div>
               <!-- /.main-author main-information__author -->
               <p class="main-information__description">JavaScript</p>
-              <h1 class="main-information__title">
-                Расширение Chrome защищает от атак
-              </h1>
-              <a class="main-information__button-link">
+              <div class="main-information__title-wrapper">
+                <h1 class="main-information__title">
+                  Расширение Chrome защищает от атак
+                </h1>
+              </div>
+              <a class="main-information__button-link" href="#">
                 <div class="button main-information__button button--default">
                   <span class="button__text main-information__button-text"
                     >Читать далее</span
                   >
-                  <svg class="button__icon main-information__button-icon">
+                  <svg class="button__icon main-information__button-icon button__icon--arrow">
                     <use xlink:href="images/sprite.svg#Arrow"></use>
                   </svg>
                 </div>
@@ -167,15 +169,17 @@
               >
                 CSS
               </p>
-              <h1 class="main-information__title">
-                Как использовать CSS float после того, как вышел Flexbox
-              </h1>
-              <a class="main-information__button-link">
+              <div class="main-information__title-wrapper main-information__title-wrapper--big">
+                <h1 class="main-information__title">
+                  Как использовать CSS float после того, как вышел Flexbox
+                </h1>
+              </div>
+              <a class="main-information__button-link" href="#">
                 <div class="button main-information__button button--default">
                   <span class="button__text main-information__button-text"
                     >Читать далее</span
                   >
-                  <svg class="button__icon main-information__button-icon">
+                  <svg class="button__icon main-information__button-icon button__icon--arrow">
                     <use xlink:href="images/sprite.svg#Arrow"></use>
                   </svg>
                 </div>
@@ -197,15 +201,17 @@
               </div>
               <!-- /.main-author main-information__author -->
               <p class="main-information__description">JavaScript</p>
-              <h1 class="main-information__title">
-                На каком стандарте писать скрипты, если я фрилансер
-              </h1>
-              <a class="main-information__button-link">
+              <div class="main-information__title-wrapper">
+                <h1 class="main-information__title">
+                  На каком стандарте писать скрипты, если я фрилансер
+                </h1>
+              </div>
+              <a class="main-information__button-link" href="#">
                 <div class="button main-information__button button--default">
                   <span class="button__text main-information__button-text"
                     >Читать далее</span
                   >
-                  <svg class="button__icon main-information__button-icon">
+                  <svg class="button__icon main-information__button-icon button__icon--arrow">
                     <use xlink:href="images/sprite.svg#Arrow"></use>
                   </svg>
                 </div>
@@ -227,19 +233,21 @@
               </div>
               <!-- /.main-author main-information__author -->
               <p
-                class="main-information__description main-information__title-sidebar--html"
+                class="main-information__description main-information__description--html"
               >
                 HTML
               </p>
-              <h1 class="main-information__title">
-                Правильно вставляем картинку на сайт для Retina дисплея
-              </h1>
-              <a class="main-information__button-link">
+              <div class="main-information__title-wrapper main-information__title-wrapper--big">
+                <h1 class="main-information__title">
+                  Правильно вставляем картинку на сайт для Retina дисплея
+                </h1>
+              </div>
+              <a class="main-information__button-link" href="#">
                 <div class="button main-information__button button--default">
                   <span class="button__text main-information__button-text"
                     >Читать далее</span
                   >
-                  <svg class="button__icon main-information__button-icon">
+                  <svg class="button__icon main-information__button-icon button__icon--arrow">
                     <use xlink:href="images/sprite.svg#Arrow"></use>
                   </svg>
                 </div>
@@ -261,19 +269,21 @@
               </div>
               <!-- /.main-author main-information__author -->
               <p
-                class="main-information__description main-information__title-sidebar--web-design"
+                class="main-information__description main-information__description--web-design"
               >
                 Web-design
               </p>
-              <h1 class="main-information__title">
-                ТОП-10 плагинов для Figma
-              </h1>
-              <a class="main-information__button-link">
+              <div class="main-information__title-wrapper">
+                <h1 class="main-information__title">
+                  ТОП-10 плагинов для Figma
+                </h1>
+              </div>
+              <a class="main-information__button-link" href="#">
                 <div class="button main-information__button button--default">
                   <span class="button__text main-information__button-text"
                     >Читать далее</span
                   >
-                  <svg class="button__icon main-information__button-icon">
+                  <svg class="button__icon main-information__button-icon button__icon--arrow">
                     <use xlink:href="images/sprite.svg#Arrow"></use>
                   </svg>
                 </div>
@@ -295,19 +305,21 @@
               </div>
               <!-- /.main-author main-information__author -->
               <p
-                class="main-information__description main-information__title-sidebar--css"
+                class="main-information__description main-information__description--css"
               >
                 Css
               </p>
-              <h1 class="main-information__title">
-                Возможности CSS Grid Layout, которые уже можно применять
-              </h1>
-              <a class="main-information__button-link">
+              <div class="main-information__title-wrapper main-information__title-wrapper--big">
+                <h1 class="main-information__title">
+                  Возможности CSS Grid Layout, которые уже можно применять
+                </h1>
+              </div>
+              <a class="main-information__button-link" href="#">
                 <div class="button main-information__button button--default">
                   <span class="button__text main-information__button-text"
                     >Читать далее</span
                   >
-                  <svg class="button__icon main-information__button-icon">
+                  <svg class="button__icon main-information__button-icon button__icon--arrow">
                     <use xlink:href="images/sprite.svg#Arrow"></use>
                   </svg>
                 </div>
@@ -389,6 +401,11 @@
       <!-- /.container -->
       <div class="main__black-bg"></div>
       <!-- /.main__black-bg -->
+      <a class="to-top-button" href="#header">
+        <svg class="to-top-button__icon">
+          <use xlink:href="images/sprite.svg#top-arrow"></use>
+        </svg>
+      </a>
     </main>
     <!-- /.main -->
     <div class="chips chips--top">
@@ -447,7 +464,7 @@
       <!-- /.container -->
     </div>
     <!-- /.chips -->
-    <div class="posts posts--top">
+    <div class="posts posts--top" id="articles">
       <div class="container posts-wrapper">
         <div class="posts-wrapper__content">
           <article class="article posts-wrapper__article">
@@ -730,7 +747,7 @@
         <a href="#" class="salary__link">
           <div class="button button--default salary__button">
             <span class="button__text salary__button-text">Читать статью</span>
-            <svg class="button__icon salary__button-icon">
+            <svg class="button__icon salary__button-icon button__icon--arrow">
               <use xlink:href="images/sprite.svg#Arrow"></use>
             </svg>
           </div>
@@ -739,7 +756,7 @@
       <!-- /.container -->
     </section>
     <!-- /.salary -->
-    <div class="rubrics rubrics--top">
+    <div class="rubrics rubrics--top" id="news">
       <div class="container rubrics__content">
         <div class="rubrics-wrapper">
           <article class="rubric rubrics-wrapper__rubric">
@@ -1360,12 +1377,12 @@
             Каверзные и не очень вопросы, которых боятся новички, когда идут на
             собеседование
           </p>
-          <a class="questions-post__button-link">
+          <a class="questions-post__button-link" href="#">
             <div class="button questions-post__button button--default">
               <span class="button__text questions-post__button-text"
                 >Читать далее</span
               >
-              <svg class="button__icon questions-post__button-icon">
+              <svg class="button__icon questions-post__button-icon button__icon--arrow">
                 <use xlink:href="images/sprite.svg#Arrow"></use>
               </svg>
             </div>
@@ -1665,7 +1682,7 @@
             <!-- /.bottom-navigation -->
           </div>
           <div class="social-links bottom-links__social-links">
-            <a class="bottom-links__link">
+            <a class="bottom-links__link" href="#">
               <div
                 class="social-links__link-bg social-links__link-bg--facebook"
               >
@@ -1676,7 +1693,7 @@
               <!-- /.social-links__link-bg -->
             </a>
             <!-- /.bottom-links__link -->
-            <a class="bottom-links__link">
+            <a class="bottom-links__link" href="#">
               <div class="social-links__link-bg social-links__link-bg--twitter">
                 <svg class="social-links__link">
                   <use xlink:href="images/sprite.svg#twitter"></use>
@@ -1685,7 +1702,7 @@
               <!-- /.social-links__link-bg -->
             </a>
             <!-- /.bottom-links__link -->
-            <a class="bottom-links__link">
+            <a class="bottom-links__link" href="#">
               <div class="social-links__link-bg social-links__link-bg--youtube">
                 <svg class="social-links__link">
                   <use xlink:href="images/sprite.svg#youtube"></use>
@@ -1694,7 +1711,7 @@
               <!-- /.social-links__link-bg -->
             </a>
             <!-- /.bottom-links__link -->
-            <a class="bottom-links__link">
+            <a class="bottom-links__link" href="#">
               <div
                 class="social-links__link-bg social-links__link-bg--instagram"
               >
@@ -1723,5 +1740,5 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
-  <script src="vendors~main.6fd491e107ced6cae492.js"></script><script src="main.9d09cd3d2c766dabba3e.js"></script></body>
+  <script src="vendors~main.6fd491e107ced6cae492.js"></script><script src="main.2c0a5d31b9f7c81a49a8.js"></script></body>
 </html>
