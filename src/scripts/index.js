@@ -57,7 +57,7 @@ const mobileBtn = document.querySelector('.mobile-button'),
       sideClose = document.querySelector('.main-information__mobile-icon'),
       flags = document.querySelectorAll('.rubric__flag-icon'),
       mobileBtnLine = document.querySelectorAll('.mobile-button__line'),
-      topBtn = document.querySelector('.to-top-button');
+      topBtn = document.querySelector('.main__btn-wrapper');
 
 mobileBtn.addEventListener('click', function(){
   this.classList.toggle('mobile-button--active');
@@ -111,8 +111,8 @@ function tabSelected(event){
 };
 
 $(window).scroll(function (event) {
-    const top = $(window).scrollTop();
-     if(top >= 350){
+    var top = $(window).scrollTop();
+     if(top >= 80){
       topBtn.style.right="40px"
      } else {
       topBtn.style.right="-400px"
