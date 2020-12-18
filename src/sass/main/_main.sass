@@ -46,7 +46,7 @@
             align-items: center
             justify-content: center
             position: absolute
-            top: 30%
+            top: 15%
             right: 0
             z-index: 7
             background-color: rgba(0, 0, 0, 0.4)
@@ -67,6 +67,7 @@
             padding-top: 55px
             position: relative
             display: none
+            height: 80%
             z-index: 5
             opacity: 0
             &--active
@@ -84,7 +85,7 @@
             z-index: 4
             position: absolute
             background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
-        &__description
+        &__category
             font-family: Lato
             font-style: normal
             font-weight: 900
@@ -93,7 +94,6 @@
             color: $blue
             text-transform: uppercase
             letter-spacing: 0.5px
-            margin-top: 145px
             &--css
                 color: #3BBDC4
             &--js
@@ -102,22 +102,25 @@
                 color: #AC8EE3
             &--web-design
                 color: #FFA34D
+        &__main-content
+            position: absolute
+            bottom: -12px
         &__title
             font-family: $roboto
             font-style: normal
             font-weight: bold
             font-size: 40px
-            line-height: 50px
+            line-height: 52px
             display: flex
             align-items: center
             color: #FFFFFF
             position: relative
             &-wrapper
+                max-width: 598px
                 overflow-x: hidden
                 overflow-y: auto
-                max-width: 598px
                 margin-top: 20px
-                height: 105px
+                max-height: 200px
                 &--big
                     height: 155px
         &__mobile-icon
@@ -164,7 +167,7 @@
                 max-width: 213px
                 max-height: 40px
                 overflow-y: auto
-        &__title-sidebar
+        &__tile-title
             padding-top: 17px
             max-width: 160px
             text-align: left
@@ -288,6 +291,21 @@
         &__sidebar-tile
             &:hover
                 background-color: #EDEFF0
+        &__title
+            transition: 0.4s
+            &:hover
+                color: $yellow
+        &__category
+            transition: 0.4s
+            &:hover
+                color: $yellow
+    .main-author
+        &__name, &__avatar
+            transition: 0.4s
+    .main-author:hover .main-author__text-wrapper>.main-author__name
+        color: $yellow !important
+    .main-author:hover .main-author__avatar
+        box-shadow: 0 0 12px $blue
     .button
         transition: 0.4s
         &:hover

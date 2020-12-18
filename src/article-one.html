@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universal - Posts's page</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header header--article" id="header">
+      <div class="container header__wrapper">
+        <a class="logo header__logo">
+          <svg class="logo__img">
+            <use xlink:href="images/sprite.svg#a-logo"></use>
+          </svg>
+        </a>
+        <!-- /.logo header__logo -->
+        <nav class="navigation header__navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a
+                href="#articles"
+                class="navigation__link navigation__link--article"
+                >Статьи</a
+              >
+            </li>
+            <!-- /.navigation__item -->
+            <li class="navigation__item">
+              <a href="#news" class="navigation__link navigation__link--article"
+                >Новости</a
+              >
+            </li>
+            <!-- /.navigation__item -->
+            <li class="navigation__item">
+              <a href="#" class="navigation__link navigation__link--article"
+                >Курсы</a
+              >
+            </li>
+            <!-- /.navigation__item -->
+            <li class="navigation__item">
+              <a href="#" class="navigation__link navigation__link--article"
+                >HTML</a
+              >
+            </li>
+            <!-- /.navigation__item -->
+            <li class="navigation__item">
+              <a href="#" class="navigation__link navigation__link--article"
+                >CSS</a
+              >
+            </li>
+            <!-- /.navigation__item -->
+            <li class="navigation__item">
+              <a href="#" class="navigation__link navigation__link--article"
+                >JavaScript</a
+              >
+            </li>
+            <!-- /.navigation__item -->
+            <li class="navigation__item">
+              <a href="#" class="navigation__link navigation__link--article"
+                >Web Design</a
+              >
+            </li>
+            <!-- /.navigation__item -->
+          </ul>
+          <!-- /.navigation__list -->
+        </nav>
+        <!-- /.navigation header__navigation -->
+        <!-- /.mobile-navigation -->
+        <form class="search-form header__search-form">
+          <input
+            placeholder="Поиск"
+            type="search"
+            class="search-form__input search-form__input--article"
+          />
+        </form>
+        <!-- /.search-form header__search-form -->
+        <div class="mobile-button header__mobile-button">
+          <span class="mobile-button__line mobile-button__line--article"></span>
+          <span class="mobile-button__line mobile-button__line--article"></span>
+          <span class="mobile-button__line mobile-button__line--article"></span>
+        </div>
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
+    <nav
+      class="navigation navigation--mobile navigation--article navigation--visible"
+    >
+      <form
+        class="search-form navigation__search-form search-form--mobile search-form--visible"
+      >
+        <input
+          placeholder="Поиск"
+          type="search"
+          class="search-form__input search-form__input--article"
+        />
+      </form>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Статьи</a>
+        </li>
+        <!-- /.navigation__item -->
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Новости</a>
+        </li>
+        <!-- /.navigation__item -->
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Курсы</a>
+        </li>
+        <!-- /.navigation__item -->
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">HTML</a>
+        </li>
+        <!-- /.navigation__item -->
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">CSS</a>
+        </li>
+        <!-- /.navigation__item -->
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">JavaScript</a>
+        </li>
+        <!-- /.navigation__item -->
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Web Design</a>
+        </li>
+        <!-- /.navigation__item -->
+      </ul>
+      <!-- /.navigation__list -->
+    </nav>
+    <main class="article-main">
+      <div class="article-main__bg-wrapper">
+        <img
+          src="images/arbg.jpg"
+          alt="Страница с постом: Фон"
+          class="article-main__bg"
+        />
+      </div>
+      <div class="container article-main__content container--article">
+        <nav class="articles-navigation">
+          <a
+            href="index.html"
+            class="articles-navigation__home-link articles-navigation__link articles-navigation__link--active"
+          >
+            <svg class="articles-navigation__home-icon">
+              <use xlink:href="images/sprite.svg#home"></use>
+            </svg>
+            <span class="articles-navigation__text">На главную</span>
+          </a>
+          <a
+            href="#"
+            class="articles-navigation__prev-link articles-navigation__link articles-navigation__link--active"
+          >
+            <svg
+              class="articles-navigation__prev-icon articles-navigation__arrow"
+            >
+              <use xlink:href="images/sprite.svg#Arrow"></use>
+            </svg>
+            <span class="articles-navigation__text">Назад</span>
+          </a>
+          <a
+            href="#"
+            class="articles-navigation__next-link articles-navigation__link articles-navigation__link--active"
+          >
+            <span class="articles-navigation__text">Вперёд</span>
+            <svg
+              class="articles-navigation__next-icon articles-navigation__arrow"
+            >
+              <use xlink:href="images/sprite.svg#Arrow"></use>
+            </svg>
+          </a>
+        </nav>
+        <!-- /.articles-navigation -->
+        <span class="article-main__category">Новости</span>
+        <div class="article-main__title-wrapper">
+          <h1 class="article-main__title">
+            Новый налоговый режим для фрилансеров — налог на проф. доход
+          </h1>
+        </div>
+        <!-- /.article-main__title-wrapper -->
+        <p class="article-main__description">
+          Руководитель налоговой заявил, что этот режим “поможет выйти из тени”
+          тем, кто работает неофициально. Разобрались, как работает режим и кому
+          он подходит, а кому нет.
+        </p>
+        <div class="article-main__other">
+          <div class="article-main__time-wrapper">
+            <svg class="article-main__time-icon">
+              <use xlink:href="images/sprite.svg#clock"></use>
+            </svg>
+            <span class="article-main__time-text">6 августа, 10:30</span>
+          </div>
+          <div class="counter counter--default article-main__counter">
+            <svg
+              class="counter__icon counter__icon--comment article-main__counter-icon"
+            >
+              <use xlink:href="images/sprite.svg#heart"></use>
+            </svg>
+            <span class="counter__number article-main__counter-number"
+              >830</span
+            >
+          </div>
+          <!-- /.counter -->
+          <div class="counter counter--default">
+            <svg
+              class="counter__icon counter__icon--comment article-main__counter-icon"
+            >
+              <use xlink:href="images/sprite.svg#comment"></use>
+            </svg>
+            <span class="counter__number article-main__counter-number">19</span>
+          </div>
+          <!-- /.counter -->
+        </div>
+        <!-- /.article-main__other -->
+      </div>
+      <!-- /.container -->
+    </main>
+    <!-- /.article-main -->
+    <section class="article-description">
+      <div
+        class="container container--article article-description__text-wrapper"
+      >
+        <div class="post-author post-author--pos">
+          <img src="images/textAva.jpg" alt="#" class="post-author__avatar" />
+          <h3 class="post-author__name">Мира Стахова</h3>
+          <p class="post-author__profession">Фрилансер</p>
+          <p class="post-author__counter">82 статьи</p>
+          <div class="post-author__footer">
+            <a href="#" class="post-author__footer-link">Страница автора</a>
+          </div>
+          <!-- /.post-author__footer -->
+        </div>
+        <!-- /.post-author -->
+        <p class="article-description__text">
+          <img
+            src="images/m.svg"
+            class="article-description__letter"
+            align="left"
+          />
+          Идейные соображения высшего порядка, а также рамки и место обучения
+          кадров играет важную роль в формировании дальнейших направлений
+          развития.
+        </p>
+        <p class="article-description__text">
+          Идейные соображения высшего порядка, а также рамки и место обучения
+          кадров играет важную роль в формировании дальнейших направлений
+          развития. Значимость этих проблем настолько очевидна, что постоянное
+          информационно-пропагандистское обеспечение нашей деятельности влечет
+          за собой процесс внедрения и модернизации дальнейших направлений
+          развития.
+        </p>
+        <div class="article-description__title-wrapper">
+          <h2 class="article-description__title">Введение НПД в РФ</h2>
+        </div>
+        <p
+          class="article-description__text article-description__text--margined"
+        >
+          Идейные соображения высшего порядка, а также рамки и место обучения
+          кадров играет важную роль в формировании дальнейших направлений
+          развития. Значимость этих проблем настолько очевидна, что постоянное
+          информационно-пропагандистское обеспечение нашей деятельности влечет
+          за собой процесс внедрения и модернизации
+        </p>
+        <p
+          class="article-description__text article-description__text--margined"
+        >
+          Идейные соображения высшего порядка, а также рамки и место обучения
+          кадров играет важную роль в формировании дальнейших направлений
+          развития. Значимость этих проблем настолько очевидна,
+        </p>
+        <p
+          class="article-description__text article-description__text--margined"
+        >
+          Идейные соображения высшего порядка, а также рамки и место обучения
+          кадров играет важную роль в формировании дальнейших направлений
+          развития. Значимость этих проблем настолько очевидна, что постоянное
+          информационно-пропагандистское обеспечение нашей деятельности влечет
+          за собой процесс внедрения и модернизации
+        </p>
+      </div>
+      <!-- /.container -->
+      <div class="container post-slider post-slider--top">
+        <div class="swiper-container post-slider__container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper post-slider__wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide post-slider__slide">
+              <img
+                src="images/textSlide.jpg"
+                alt="Слайдер: Фото"
+                class="post-slider__img"
+              />
+              <div class="post-slider__slide-footer">
+                <p class="post-slider__text">
+                  Geostatistics deal with quantitative data analysis,
+                  specifically the application of statistical methodology
+                </p>
+                <div class="post-slider__author">
+                  <img
+                    src="images/sliderAva.jpg"
+                    alt="Слайдер: Автор"
+                    class="post-slider__ava"
+                  />
+                  <div class="post-slider__info-wrapper">
+                    <h3 class="post-slider__name">Андрей Вашигаев</h3>
+                    <span class="post-slider__profession">Фотограф</span>
+                  </div>
+                  <!-- /.post-slider__info-wrapper -->
+                </div>
+                <!-- /.post-slider__author -->
+              </div>
+              <!-- /.post-slider__slide-footer -->
+            </div>
+            <div class="swiper-slide post-slider__slide">
+              <img
+                src="images/textSlide.jpg"
+                alt="Слайдер: Фото"
+                class="post-slider__img"
+              />
+              <div class="post-slider__slide-footer">
+                <p class="post-slider__text">
+                  Geostatistics deal with quantitative data analysis,
+                  specifically the application of statistical methodology
+                </p>
+                <div class="post-slider__author">
+                  <img
+                    src="images/sliderAva.jpg"
+                    alt="Слайдер: Автор"
+                    class="post-slider__ava"
+                  />
+                  <div class="post-slider__info-wrapper">
+                    <h3 class="post-slider__name">Андрей Вашигаев</h3>
+                    <span class="post-slider__profession">Фотограф</span>
+                  </div>
+                  <!-- /.post-slider__info-wrapper -->
+                </div>
+                <!-- /.post-slider__author -->
+              </div>
+              <!-- /.post-slider__slide-footer -->
+            </div>
+          </div>
+          <svg class="post-slider__button post-slider__button--prev">
+            <use xlink:href="images/sprite.svg#sliderArrow"></use>
+          </svg>
+          <svg class="post-slider__button post-slider__button--next">
+            <use xlink:href="images/sprite.svg#sliderArrow"></use>
+          </svg>
+        </div>
+      </div>
+      <!-- /.container post-slider -->
+    </section>
+    <!-- /.article-description -->
+  </body>
+</html>

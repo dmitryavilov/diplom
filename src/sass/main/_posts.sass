@@ -14,7 +14,10 @@
         &__sidebar
             background-color: #fff
             grid-row: 2/4
-
+        &__link
+            width: 100%
+            height: 100%
+            position: relative
     &--top
         padding-top: 30px
 .article
@@ -28,6 +31,7 @@
         position: relative
         z-index: 2
         padding-top: 35px
+        padding-right: 24px
     &__car
         position: absolute
         z-index: 1
@@ -66,18 +70,18 @@
             margin-top: 20px
             overflow-y: auto
             max-width: 245px
-            height: 95px
+            max-height: 120px
     &__description
         font-style: normal
         font-weight: normal
         font-size: 14px
         line-height: 20px
-        max-width: 228px
-        max-height: 80px
+        max-width: 230px
+        max-height: 110px
         overflow-y: auto
         overflow-x: hidden
         color: #4B5157
-        margin-top: 18px
+        padding-top: 23px
     &-comment
         flex-basis: 444px
         max-height: 30px
@@ -128,6 +132,9 @@
         top: 19px
         display: flex
         justify-content: center
+    &__content
+        position: absolute
+        bottom: 26px
     &__bg
         position: absolute
         top: -2px
@@ -202,26 +209,27 @@
         text-transform: uppercase
         overflow-x: hidden
         &-wrapper
-            max-height: 78px
+            max-height: 157px
             overflow-y: auto
             z-index: 3
             position: relative
-            margin-top: 157px
     &__category
         color: #E7D9FF
         font-style: normal
         font-weight: 900
         font-size: 12px
         line-height: 15px
+        bottom: 22px
         z-index: 3
         position: relative
-        top: 134px
         letter-spacing: 0.5px
         text-transform: uppercase
 .instruments-post
     grid-row: 3/5
     background-color: #fff
     overflow: hidden
+    position: relative
+    border-radius: 10px
     &__bg
         width: 100%
         height: 275px
@@ -234,10 +242,10 @@
         font-size: 16px
         line-height: 25px
         &-wrapper
-            margin-left: 25px
-            margin-top: 15px
-            max-width: 170px
-            max-height: 55px
+            padding-left: 25px
+            padding-top: 15px
+            max-width: 210px
+            max-height: 103px
             overflow-y: auto
             overflow-x: hidden
 
@@ -245,6 +253,8 @@
     background-color: #fff
     padding-top: 25px
     padding-left: 25px
+    border-radius: 10px
+    position: relative
     &__title
         font-style: normal
         font-weight: bold
@@ -261,7 +271,7 @@
         font-style: normal
         font-weight: normal
         font-size: 14px
-        line-height: 20px
+        line-height: 143%
         color: $darkGray
         max-width: 213px
         height: 60px
@@ -376,26 +386,26 @@
 
 .tags
     &__tags-wrapper
-        margin-top: 22px
-        margin-left: 25px
-        max-width: 238px
+        padding-top: 22px
+        padding-left: 25px
+        max-width: 257px
         overflow-y: auto
-        max-height: 270px
+        max-height: 90%
         display: flex
         flex-wrap: wrap
         font-family: Lato
         font-style: normal
-        font-weight: 900
-        font-size: 14px
-        line-height: 20px
     &__tag
         margin-bottom: 14px
         margin-right: 10px
+        font-weight: 900
+        font-size: 14px
+        line-height: 22px
 .tag
     max-width: 115px
     overflow-x: hidden
     white-space: nowrap
-    padding: 6px 14.5px 3px
+    padding: 6px 14.5px 1px
     text-decoration: none
     border: 1px solid #D9DADB
     border-radius: 5px
@@ -460,10 +470,10 @@
                 transition: 0.4s
             &-link
                 transition: 0.4s
-            &:hover &-icon
-                fill: $yellow
-            &:hover &-link
+            &-link:hover
                 color: $yellow
+            &-link:hover &-icon
+                fill: $yellow
     .links-post
         &__icon
             &-bg
@@ -490,12 +500,18 @@
             &:hover
                 color: $yellow
     .instruments-post
+        transition: 0.4s
+        &:hover
+            box-shadow: 0 0 20px white
         &__description
             transition: 0.4s
-            &:hover
-                color: gray
+        &:hover &__description
+            color: gray
     .post
+        transition: 0.4s
+        &:hover &__title
+            color: gray
         &__title
             transition: 0.4s
-            &:hover
-                color: gray
+        &:hover
+            box-shadow: 0 0 20px white

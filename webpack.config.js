@@ -39,6 +39,10 @@ module.exports = {
             filename: 'index.html',
             template: './index.html'
         }),
+        new HTMLWebpackPlugin({
+            filename: 'article-one.html',
+            template: './article-one.html'
+        }),
         new CleanWebpackPlugin(),
         new CopyPlugin({
             patterns: [

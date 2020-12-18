@@ -8,6 +8,7 @@ const jqueryvalidation = require('jquery-validation');
 // Картинки
 import Sprite from '../img/sprite.svg'
 import Search from '../img/header/search.svg'
+import gSearch from '../img/header/gsearch.svg'
 import MainBg from '../img/main/bg.jpg'
 import MainAvatar from '../img/main/mainAvatar.png'
 import Ch1 from '../img/chips/ch1.jpg'
@@ -36,6 +37,11 @@ import Rm7 from '../img/rubrics/rm7.jpg'
 import qustionsBg from '../img/slider/qbg.jpg'
 import sliderAvatar from '../img/slider/sliderAvatar.png'
 import slide1 from '../img/slider/slide1.jpg'
+import aBg from '../img/article-main/arbg.jpg'
+import m from '../img/m.svg'
+import textAva from '../img/text/textAva.jpg'
+import textSlide from '../img/text/textSlide.jpg'
+import posSlideAva from '../img/text/sliderAva.jpg'
 // Шрифты
 import Lato1 from '../fonts/Lato-Thin.woff'
 import Lato2 from '../fonts/Lato-Light.woff'
@@ -58,6 +64,18 @@ const mobileBtn = document.querySelector('.mobile-button'),
       flags = document.querySelectorAll('.rubric__flag-icon'),
       mobileBtnLine = document.querySelectorAll('.mobile-button__line'),
       topBtn = document.querySelector('.main__btn-wrapper');
+const articleSlider = new Swiper('.post-slider__container', {
+  direction: 'horizontal',
+  speed: 450,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  navigation: {
+    nextEl: ".post-slider__button--next",
+    prevEl: ".post-slider__button--prev",
+  }
+})
 
 mobileBtn.addEventListener('click', function(){
   this.classList.toggle('mobile-button--active');
@@ -111,8 +129,7 @@ function tabSelected(event){
 };
 
 $(window).scroll(function (event) {
-    var top = $(window).scrollTop();
-     if(top >= 80){
+     if($(window).scrollTop() >= 80){
       topBtn.style.right="40px"
      } else {
       topBtn.style.right="-400px"
@@ -132,18 +149,18 @@ var wow = new WOW.WOW({
   live: false
 }).init();
 
-const mySwiper = new Swiper('.slider-wrapper', {
+const mainSlider = new Swiper('.slider-wrapper', {
   direction: 'horizontal',
   speed: 750,
+  loop: true,
   autoplay: {
-    delay: 2000,
+    delay: 3000,
   },
   keyboard: {
     enabled: true,
     onlyInViewport: false,
   },
   autoScrollOffset: 1,
-  spaceBetween: 15,
   pagination: {
     el: '.slider-wrapper__pagination',
     type: 'bullets',
@@ -154,6 +171,9 @@ const mySwiper = new Swiper('.slider-wrapper', {
   },
 
 })
+
+
+
 $('.form').each(function(){
 $(this).validate({
   errorClass: "invalid",

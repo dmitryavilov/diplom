@@ -27,10 +27,6 @@
         border-bottom: 1px solid #d9dadb
     &:not(:first-child)
         padding-top: 24px
-    &:nth-child(5) &__title-wrapper
-        height: 25px
-    &:nth-child(5) &__description
-        margin-top: 10px
     &:nth-child(5) &__other
         margin-top: 44px
     &__img
@@ -62,30 +58,30 @@
     &__title
         font-weight: bold
         font-size: 20px
-        line-height: 25px
+        line-height: 125%
         font-style: normal
         color: $darkGray
         font-family: $roboto
         &-wrapper
             max-width: 437px
-            height: 55px
+            max-height: 82px
             overflow-y: auto
             overflow-x: hidden
-            margin-top: 21px
+            padding-top: 21px
     &__description
         font-style: normal
         font-weight: normal
         font-size: 14px
-        line-height: 20px
+        line-height: 143%
         color: $lightGray
         max-width: 440px
-        max-height: 62px
+        max-height: 80px
         overflow-x: hidden
         overflow-y: auto
-        margin-top: 7px
+        padding-top: 10px
     &__other
         display: flex
-        margin-top: 17px
+        margin-top: 21px
     &__counter
         margin-left: 10px
     &__flag-icon

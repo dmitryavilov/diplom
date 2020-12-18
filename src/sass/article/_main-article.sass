@@ -1,0 +1,165 @@
+.header
+    &--article
+        background-color: #fff
+.navigation
+    &__link
+        color: #939699
+    &--article
+        background-color: #fff !important
+.search-form
+    &__input
+        &--article
+            background-color: #F5F5F5 !important
+            background-image: url('../img/header/gsearch.svg')
+            color: black
+            &::placeholder
+                color: #939699
+.mobile-button
+    &__line
+        background-color: $darkGray
+.article-main
+    position: relative
+    height: 590px
+    padding-top: 60px
+    &__content
+        position: relative
+    &__bg
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        z-index: -2
+        object-fit: cover
+        &-wrapper
+            &:after
+                content: ''
+                position: absolute
+                left: 0
+                top: 0
+                bottom: 0
+                right: 0
+                width: 100%
+                height: 100%
+                background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75))
+                z-index: -1
+    &__category
+        font-style: normal
+        font-weight: 900
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: $blue
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 55px
+        line-height: 70px
+        font-family: $roboto
+        color: white
+        &-wrapper
+            height: 215px
+            max-width: 750px
+            overflow-x: hidden
+            overflow-y: auto
+            margin-top: 52px
+    &__description
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 30px
+        color: white
+        max-width: 632px
+        max-height: 90px
+        overflow-x: hidden
+        overflow-y: auto
+        margin-top: 27px
+    &__other
+        margin-top: 43px
+        display: flex
+        align-items: center
+    &__time
+        &-wrapper
+            display: flex
+            align-items: center
+            margin-right: 20px
+        &-icon
+            width: 15px
+            height: 15px
+            fill: white
+            opacity: 0.4
+            margin-right: 5px
+            transform: translateY(-1px)
+        &-text
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            opacity: 0.85
+            color: white
+    &__counter
+        margin-right: 20px
+        &-icon
+            opacity: 0.4
+            fill: white
+        &-number
+            color: white
+.articles-navigation
+    display: flex
+    position: absolute
+    align-items: center
+    right: 0
+    &__home
+        &-icon
+            width: 20px
+            height: 20px
+            transform: translateY(-1px)
+            fill: white
+        &-link
+            display: flex
+            align-items: center
+            margin-right: 30px
+    &__text
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: white
+        margin-left: 5px
+    &__arrow
+        width: 20px
+        height: 20px
+        fill: white
+    &__prev
+        &-link
+            display: flex
+            align-items: center
+            margin-right: 16px
+        &-icon
+            transform: scale(-1, -1) translateY(1px)
+    &__next
+        &-link
+            display: flex
+            align-items: center
+        &-icon
+            transform: translateY(-1px)
+            margin-left: 5px
+
+@media (min-width: 992px)
+    .navigation
+        &__link
+            &--article
+                &:hover
+                    color: lightgray
+    .articles-navigation
+        &__home-icon, &__arrow
+            transition: 0.4s
+        &__text
+            transition: 0.4s
+            &:hover
+                color: $yellow
+    .articles-navigation__link--active:hover svg
+        fill: $yellow
